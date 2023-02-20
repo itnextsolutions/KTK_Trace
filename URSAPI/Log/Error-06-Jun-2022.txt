@@ -1,0 +1,71 @@
+
+ 06-06-2022 14:40:43   |      |   Call API Start :  Login Details
+ 06-06-2022 14:41:09   |      |   GetHttpResponseMessage Start GetloginDetails
+ 06-06-2022 14:41:09   |      |   GetHttpResponseMessage End GetloginDetails
+ 06-06-2022 14:41:19   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 14:41:19   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 14:42:25   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 06-06-2022 14:42:25   |      |   GetHttpResponseMessage End GetUserDetailList
+ 06-06-2022 14:42:25   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 14:42:25   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 14:48:57   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 06-06-2022 14:48:57   |      |   GetHttpResponseMessage End GetUserRoleList
+ 06-06-2022 14:50:11   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 14:50:11   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 14:51:14   |      |   Call API Start :  Login Details
+ 06-06-2022 14:51:21   |      |   GetHttpResponseMessage Start GetloginDetails
+ 06-06-2022 14:51:21   |      |   GetHttpResponseMessage End GetloginDetails
+ 06-06-2022 14:51:22   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 14:51:22   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 14:51:42   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 14:51:42   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 14:51:49   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 06-06-2022 14:51:49   |      |   GetHttpResponseMessage End GetUserDetailList
+ 06-06-2022 14:51:50   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 14:51:50   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 15:01:00   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 06-06-2022 15:01:01   |      |   GetHttpResponseMessage End GetUserRoleList
+ 06-06-2022 15:01:28   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 15:01:28   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 15:02:57   |      |   Call API Start :  Login Details
+ 06-06-2022 15:03:02   |      |   GetHttpResponseMessage Start GetloginDetails
+ 06-06-2022 15:03:02   |      |   GetHttpResponseMessage End GetloginDetails
+ 06-06-2022 15:03:04   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 15:03:04   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 15:03:31   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 06-06-2022 15:03:31   |      |   GetHttpResponseMessage End GetUserDetailList
+ 06-06-2022 15:03:31   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 15:03:31   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 15:10:46   |      |   Call API Start :  Login Details
+ 06-06-2022 15:10:49   |      |   GetHttpResponseMessage Start GetloginDetails
+ 06-06-2022 15:10:49   |      |   GetHttpResponseMessage End GetloginDetails
+ 06-06-2022 15:10:50   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 15:10:50   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 15:11:04   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 06-06-2022 15:11:04   |      |   GetHttpResponseMessage End GetUserDetailList
+ 06-06-2022 15:11:04   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 15:11:04   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 15:16:56   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 06-06-2022 15:16:56   |      |   GetHttpResponseMessage End GetUserRoleList
+ 06-06-2022 15:17:44   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 15:17:44   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 17:51:42   |      |   Call API Start :  Login Details
+ 06-06-2022 17:51:48   |      |   GetHttpResponseMessage Start GetloginDetails
+ 06-06-2022 17:51:48   |      |   GetHttpResponseMessage End GetloginDetails
+ 06-06-2022 17:51:50   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 17:51:50   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 17:53:04   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 06-06-2022 17:53:04   |      |   GetHttpResponseMessage End GetUserDetailList
+ 06-06-2022 17:53:04   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 17:53:04   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 18:00:48   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 06-06-2022 18:00:48   |      |   GetHttpResponseMessage End GetUserRoleList
+ 06-06-2022 18:06:08   |      |   Call API Start :  Login Details
+ 06-06-2022 18:06:08   |      |   GetHttpResponseMessage Start GetloginDetails
+ 06-06-2022 18:06:09   |      |   GetHttpResponseMessage End GetloginDetails
+ 06-06-2022 18:06:09   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 18:06:09   |      |   GetHttpResponseMessage End GetMenuList
+ 06-06-2022 18:07:26   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 06-06-2022 18:07:26   |      |   GetHttpResponseMessage End GetUserDetailList
+ 06-06-2022 18:07:26   |      |   GetHttpResponseMessage Start GetMenuList
+ 06-06-2022 18:07:26   |      |   GetHttpResponseMessage End GetMenuList

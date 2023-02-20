@@ -1,0 +1,35 @@
+
+ 28-07-2022 12:34:29   |      |   Call API Start :  Login Details
+ 28-07-2022 12:34:36   |      |   GetHttpResponseMessage Start GetloginDetails
+ 28-07-2022 12:34:36   |      |   GetHttpResponseMessage End GetloginDetails
+ 28-07-2022 12:34:40   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 12:34:40   |      |   GetHttpResponseMessage End GetMenuList
+ 28-07-2022 12:37:03   |      |   Call API Start :  Login Details
+ 28-07-2022 12:37:05   |      |   GetHttpResponseMessage Start GetloginDetails
+ 28-07-2022 12:37:05   |      |   GetHttpResponseMessage End GetloginDetails
+ 28-07-2022 12:37:06   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 12:37:06   |      |   GetHttpResponseMessage End GetMenuList
+ 28-07-2022 13:09:05   |      |   Call API Start :  Login Details
+ 28-07-2022 13:09:06   |      |   GetHttpResponseMessage Start GetloginDetails
+ 28-07-2022 13:09:06   |      |   GetHttpResponseMessage End GetloginDetails
+ 28-07-2022 13:09:08   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 13:09:08   |      |   GetHttpResponseMessage End GetMenuList
+ 28-07-2022 13:09:46   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 13:09:46   |      |   GetHttpResponseMessage End GetMenuList
+ 28-07-2022 13:10:31   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 13:10:31   |      |   GetHttpResponseMessage End GetMenuList
+ 28-07-2022 13:18:17   |      |   Call API Start :  Login Details
+ 28-07-2022 13:18:17   |      |   GetHttpResponseMessage Start GetloginDetails
+ 28-07-2022 13:18:17   |      |   GetHttpResponseMessage End GetloginDetails
+ 28-07-2022 13:18:17   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 13:18:17   |      |   GetHttpResponseMessage End GetMenuList
+ 28-07-2022 13:18:59   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 28-07-2022 13:18:59   |      |   GetHttpResponseMessage End GetUserDetailList
+ 28-07-2022 13:19:00   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 13:19:00   |      |   GetHttpResponseMessage End GetMenuList
+ 28-07-2022 13:27:16   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 13:27:16   |      |   GetHttpResponseMessage End GetMenuList
+ 28-07-2022 13:28:15   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 28-07-2022 13:28:15   |      |   GetHttpResponseMessage End GetUserDetailList
+ 28-07-2022 13:28:16   |      |   GetHttpResponseMessage Start GetMenuList
+ 28-07-2022 13:28:16   |      |   GetHttpResponseMessage End GetMenuList

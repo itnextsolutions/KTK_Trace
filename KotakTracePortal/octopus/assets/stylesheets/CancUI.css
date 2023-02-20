@@ -1,0 +1,212 @@
+﻿#msform {
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+    height: 100%; /*Image only BG fallback*/ /*border: 1px solid black;*/
+    font-family: Calibri;
+}
+
+    #msform fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 10%; /*stacking fieldsets above each other*/
+        position: absolute;
+    }
+        /*Hide all except first fieldset*/
+        #msform fieldset:not(:first-of-type) {
+            display: none;
+        }
+    /*inputs*/
+    #msform input, #msform textarea {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box; /*font-family: montserrat;*/
+        font-family: 'Roboto', sans-serif;
+        color: #2C3E50;
+        font-size: 15px;
+    }
+    /*buttons*/
+    #msform .action-button {
+        width: 100px;
+        background: #27AE60;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 1px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+
+        #msform .action-button:hover, #msform .action-button:focus {
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+        }
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 20px;
+    overflow: hidden; /*CSS counters to number the steps*/
+    counter-reset: step;
+    margin-top: 20px;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.divdtls {
+    margin-bottom: 30px;
+    overflow: hidden; /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+    .divdtls li {
+        list-style-type: none;
+        color: blue;
+        text-transform: uppercase;
+        font-size: 11px;
+        width: 14.7%;
+        float: left;
+        position: relative;
+        /*text-align: center;*/
+        padding-left: 49px;
+        word-wrap: break-word;
+    }
+
+
+        /*progressbar connectors*/
+        .divdtls li:after {
+            /*content: '';*/
+            width: 100%;
+            height: 2px;
+            background: white;
+            position: absolute;
+            left: -45%;
+            top: 9px;
+            z-index: -1;
+        }
+
+        .divdtls li:before {
+            /*counter-increment: step;*/
+            width: 20px;
+            line-height: 20px;
+            display: block;
+            font-size: 10px;
+            color: #333;
+            background: white;
+            border-radius: 3px;
+            margin: 0 auto 5px auto;
+            z-index: 1;
+        }
+
+        .divdtls li:first-child:after {
+            /*connector not needed before the first step*/
+            content: none;
+        }
+        /*marking active/completed steps green*/
+        /*The number of the step and the connector before it = green*/
+        .divdtls li.active:before, li.active:after {
+            background: #27AE60;
+            color: white;
+        }
+
+.header li {
+    list-style-type: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 19.33%;
+    float: left;
+    position: absolute;
+    text-align: center;
+    background-color: lightgray;
+    font-weight: Bold;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#progressbar li {
+    list-style-type: none;
+    color: black; /*added by priya*/
+    text-transform: uppercase;
+    font-size: 11px;
+    width: 19.33%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+
+    /*progressbar connectors*/
+    #progressbar li:after {
+        content: '';
+        width: 93%;
+        height: 2px;
+        background: white; /*added by priya*/
+        position: absolute;
+        left: -45%;
+        top: 9px;
+        z-index: 1;
+    }
+
+    #progressbar li:not(.active):after {
+        border-style: none none dotted;
+        height: 1px;
+        color: lightgray;
+        z-index: -1;
+    }
+
+
+
+    #progressbar li:before {
+        content: counter(step);
+        counter-increment: step;
+        width: 20px;
+        line-height: 20px;
+        display: block;
+        font-size: 12px;
+        color: white; /*added by priya*/
+        background: grey; /*added by priya*/
+        border-radius: 3px;
+        margin: 0 auto 5px auto;
+        z-index: 1;
+    }
+
+    #progressbar li:first-child:after {
+        /*connector not needed before the first step*/
+        content: none;
+    }
+    /*marking active/completed steps green*/
+    /*The number of the step and the connector before it = green*/
+    #progressbar li.active:before, #progressbar li.active:after {
+        background: #27AE60;
+        color: white;
+    }
+
+.divBorder {
+    border: 1px solid black;
+    /*padding-bottom:10px;
+            padding-top:10px;*/
+}
+
+b {
+    color: black;
+}

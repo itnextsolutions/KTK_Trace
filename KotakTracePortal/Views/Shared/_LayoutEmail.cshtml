@@ -1,0 +1,481 @@
+﻿<!doctype html>
+<html class="fixed sidebar-left-collapsed">
+<head>
+    <style>
+       
+
+        .loader {
+            position: inherit;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('../octopus/assets/images/download.png') 50% 50% no-repeat rgb(249,249,249);
+            opacity: .8;
+        }
+
+        i.fa-plus-circle {
+            color: gray !important;
+        }
+
+        i.fa-minus-circle {
+            color: gray !important;
+        }
+
+        i.fa-eye {
+            color: #505457 !important;
+        }
+
+        .iRejectcolor {
+            color: #dc0812 !important;
+        }
+    </style>
+    <style>
+        #modalContainer {
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            z-index: 10000;
+            background-image: url(tp.png); /* required by MSIE to prevent actions on lower z-index elements */
+        }
+
+        #alertBox {
+            position: relative;
+            width: 33%;
+            min-height: 100px;
+            max-height: 400px;
+            margin-top: 50px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            top: 30%;
+            transition: opacity 0.6s;
+        }
+
+        #modalContainer > #alertBox {
+            position: fixed;
+        }
+
+        #alertBox h1 {
+            margin: 0;
+            font: bold 1em Raleway,arial;
+            background-color: #f01739;
+            color: #FFF;
+            border-bottom: 1px solid #f97352;
+            padding: 10px 0 10px 5px;
+        }
+
+        #alertBox p {
+            height: 50px;
+            padding-left: 5px;
+            padding-top: 30px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #alertBox #closeBtn {
+            display: block;
+            position: relative;
+            margin: 10px auto 10px auto;
+            padding: 7px;
+            border: 0 none;
+            width: 70px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFF;
+            background-color: #f01739;
+            border-radius: 0px;
+            text-decoration: none;
+            outline: 0 !important;
+        }
+
+        /* unrelated styles */
+
+        #mContainer {
+            position: relative;
+            width: 600px;
+            margin: auto;
+            padding: 5px;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 4px;
+        }
+
+        code {
+            font-size: 1.2em;
+            color: #069;
+        }
+
+        #credits {
+            position: relative;
+            margin: 25px auto 0px auto;
+            width: 350px;
+            font: 0.7em verdana;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            height: 90px;
+            padding-top: 4px;
+        }
+
+            #credits img {
+                float: left;
+                margin: 5px 10px 5px 0px;
+                border: 1px solid #000000;
+                width: 80px;
+                height: 79px;
+            }
+
+        .important {
+            background-color: #F5FCC8;
+            padding: 2px;
+        }
+
+      
+        .isDisabled {
+            color: currentColor;
+            cursor: not-allowed;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+    </style>
+
+    <style>
+        media screen and (min-width: 768px) .jumbotron {
+            padding: 10px 0px 10px 0px !important;
+        }
+
+        .jumbotron {
+            padding: 30px 15px;
+            margin-bottom: 15px !important;
+            color: inherit;
+            background-color: #ded5d5 !important;
+        }
+    </style>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Vendor CSS -->
+
+    <link rel="stylesheet" href="~/octopus/assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/octopus/assets/vendor/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/octopus/assets/vendor/magnific-popup/magnific-popup.css" />
+    @*<link rel="stylesheet" href="~/octopus/assets/vendor/bootstrap-datepicker/css/datepicker3.css" />*@
+
+    <!-- Specific Page Vendor CSS -->
+    <link rel="stylesheet" href="~/octopus/assets/vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css" />
+    @*<link rel="stylesheet" href="~/octopus/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />*@
+    <link rel="stylesheet" href="~/octopus/assets/vendor/morris/morris.css" />
+    @*<link rel="stylesheet" href="~/octopus/assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />*@
+    @*<link href="~/Scripts/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />*@
+    <!-- Theme CSS -->
+    @*<link href="~/octopus/assets/stylesheets/jquery.raty.css" rel="stylesheet" />*@
+    <link rel="stylesheet" href="~/octopus/assets/stylesheets/theme.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="~/octopus/assets/stylesheets/skins/default.css" />
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="~/octopus/assets/stylesheets/theme-custom.css">
+    <link href="~/octopus/assets/stylesheets/skins/icon-font.min.css" rel="stylesheet" />
+    <link href="~/octopus/assets/stylesheets/skins/line-awesome.css" rel="stylesheet" />
+    <link href="~/octopus/assets/stylesheets/sweetalert.min.css" rel="stylesheet" />
+    <!-- Head Libs -->
+
+    @*<link href="~/Resources/Dashboard/dashboardChart.css" rel="stylesheet" />*@
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/octopus/assets/vendor/ios7-switch/ios7-switch.js"></script>
+
+</head>
+<body>
+    <button onclick="topFunction()" id="btnMoveTop" title="Go to top">Top</button>
+    <section class="body">
+
+        <!-- start: header -->
+        <header class="header navbar-fixed-top">
+            <div class="logo-container">
+                <a href="../" class="logo">
+                    <img src="~/octopus/assets/images/HDFCErgoLogo.png" height="30" alt="HDFC Ergo" />
+                </a>
+                <span class="dashboard-title">eProcure</span>
+                <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                    <i class="la-bars la" aria-label="Toggle sidebar"></i>
+                </div>
+
+            </div>
+        </header>
+        <div class="inner-wrapper">
+            <section role="main" class="content-body">
+                <div class="row">
+                    @RenderBody()
+                </div>
+
+            </section>
+        </div>
+        <div class="loader"></div>
+    </section>
+
+    <script src="~/octopus/assets/vendor/modernizr/modernizr.js"></script>
+    <!-- Vendor -->
+    <script src="~/octopus/assets/vendor/jquery/jquery.js"></script>
+    <script src="~/octopus/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="~/octopus/assets/vendor/bootstrap/js/bootstrap.js"></script>
+    @*<script src="~/octopus/assets/vendor/nanoscroller/nanoscroller.js"></script>
+    <script src="~/octopus/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="~/octopus/assets/vendor/magnific-popup/magnific-popup.js"></script>
+    <script src="~/octopus/assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>*@
+
+    @*<script src="~/octopus/assets/javascripts/tables/examples.datatables.default.js"></script>
+    <script src="~/Scripts/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/datatables.net/js/dataTables.select.min.js"></script>
+    <script src="~/Scripts/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="~/Scripts/datatablebutton/dataTables.buttons.min.js"></script>
+    <script src="~/Scripts/datatablebutton/jszip.min.js"></script>
+    <script src="~/Scripts/datatablebutton/pdfmake.min.js"></script>
+    <script src="~/Scripts/datatablebutton/vfs_fonts.js"></script>
+    <script src="~/Scripts/datatablebutton/buttons.html5.min.js"></script>
+    <script src="~/Scripts/datatablebutton/buttons.print.min.js"></script>*@
+    <script src="~/Scripts/js/moment.js"></script>
+    <script src="~/octopus/assets/javascripts/sweetalert.min.js"></script>
+    @*<script src="~/Scripts/jquery.raty.js"></script>
+    <script src="~/Scripts/js/date-uk.js"></script>
+    <script src="~/octopus/assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>*@
+    <script src="~/octopus/assets/javascripts/theme.js"></script>
+    <script src="~/octopus/assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>
+
+    @*<script src="~/Resources/table2excel/src/jquery.table2excel.js"></script>*@
+
+
+    @*<script src="~/octopus/assets/javascripts/theme.init.js"></script>
+    <script src="~/octopus/assets/javascripts/svgembedder.min.js"></script>*@
+    @*<script src="~/octopus/assets/javascripts/ui-elements/examples.modals.js"></script>*@
+
+
+
+    <script>
+
+        function ShowLoader() {
+            $(".loader").css("display", "block");
+        }
+
+        function HideLoader() {
+            $(".loader").css("display", "none");
+        }
+
+
+        function SuccessSwal(Message) {
+
+            swal({
+                title: "",
+                text: Message,
+                type: "success",
+                showCancelButton: false,
+                confirmButtonClass: "btn-success",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+           function () {
+               //   swal.close();
+               window.location.href = "https://procurebuddy.heintra.in/";
+
+           });
+        }
+
+        function WarningSwal(Message) {
+
+            swal({
+                title: "Warning",
+                text: Message,
+                type: "warning",
+                showCancelButton: false,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+            function () {
+                window.location.href = "https://procurebuddy.heintra.in/";
+            });
+        }
+
+        function alert(Message) {
+
+            swal({
+                title: "Warning",
+                text: Message,
+                type: "warning",
+                showCancelButton: false,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+            function () {
+                swal.close();
+            });
+        }
+
+
+        //window.onscroll = function () { scrollFunction() };
+
+        //function scrollFunction() {
+        //    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        //        document.getElementById("btnMoveTop").style.display = "block";
+        //    } else {
+        //        document.getElementById("btnMoveTop").style.display = "none";
+        //    }
+        //}
+
+        // When the user clicks on the button, scroll to the top of the document
+        //function topFunction() {
+        //    //document.body.scrollTop = 0;
+        //    //document.documentElement.scrollTop = 0;
+
+        //    $([document.documentElement, document.body]).animate({
+        //        scrollTop: 0
+        //    }, 2000);
+
+        //}
+        @*$(document).ready(function () {
+            function disableBack() { window.history.forward() }
+
+            window.onload = disableBack();
+            window.onpageshow = function (evt) { if (evt.persisted) disableBack() }
+
+            var EmpID = '@Session["EmpID"]'
+            var isEmailApp = '@ViewBag.EmailApproval'
+            if (EmpID == "" && isEmailApp != "EmailApp") {
+                $("#Logout").click();
+            }
+
+
+        });*@
+
+        //$(window).load(function () {
+
+        //    $(".loader").fadeOut("slow");
+
+        //});
+
+        //window.onbeforeunload = function (e) {
+        //    $.ajax({
+        //        type: "POST",
+        //        url: "/Login/AppicationExist",
+        //        data: { sessionId: sessionId },
+        //        success: function (res) {
+        //        }
+        //    });
+        //}
+
+        var ALERT_TITLE = "Alert";
+        var ALERT_BUTTON_TEXT = "Ok";
+
+        //function createCustomAlert(txt) {
+        //    d = document;
+        //    if (d.getElementById("modalContainer")) return;
+        //    mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+        //    mObj.id = "modalContainer";
+        //    mObj.style.height = d.documentElement.scrollHeight + "px";
+
+        //    alertObj = mObj.appendChild(d.createElement("div"));
+        //    alertObj.id = "alertBox";
+
+        //    if (d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+        //    alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth) / 2 + "px";
+        //    alertObj.style.visiblity = "visible";
+
+        //    h1 = alertObj.appendChild(d.createElement("h1"));
+        //    h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+        //    msg = alertObj.appendChild(d.createElement("p"));
+        //    //msg.appendChild(d.createTextNode(txt));
+        //    msg.innerHTML = txt;
+
+        //    btn = alertObj.appendChild(d.createElement("a"));
+        //    btn.id = "closeBtn";
+        //    btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+        //    btn.href = "#";
+        //    btn.focus();
+        //    btn.onclick = function () { removeCustomAlert(); return false; }
+
+        //    alertObj.style.display = "block";
+
+
+        //}
+
+        //function removeCustomAlert() {
+        //    document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+        //}
+        //function ful() {
+        //    alert('Alert this pages');
+        //}
+
+        //$(".btn-rounded").click(function () {
+        //    // ShowLoader();
+        //    var formid = "";
+        //    var parent = $(this).parents("form")[0];
+        //    if (parent == undefined) {
+
+        //    }
+        //    else {
+        //        formid = $(this).parents("form")[0].id;
+        //    }
+
+
+
+
+        //    if (formid != "") {
+        //        if ($('#' + formid).valid()) {
+        //            ShowLoader();
+
+        //        }
+        //        else {
+
+        //            var btnId = $(this).context.id;
+        //            if (btnId == 'BtnBack') {
+        //                ShowLoader();
+        //            }
+
+        //            //alert('Do something (invalid)')
+        //            // Do something (invalid)
+        //        }
+        //    }
+        //    else {
+        //        ShowLoader();
+        //    }
+
+
+
+        //})
+
+
+
+        
+
+
+    </script>
+
+
+
+    @*<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>*@
+
+
+    @*@RenderSection("scripts", required: false)*@
+</body>
+</html>

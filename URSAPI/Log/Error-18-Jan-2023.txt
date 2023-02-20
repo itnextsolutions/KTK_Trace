@@ -1,0 +1,259 @@
+
+ 18-01-2023 13:37:30   |      |   Call API Start :  Login Details
+ 18-01-2023 13:38:46   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 18-01-2023 13:38:47   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| ORA-28001: the password has expired
+    at URSAPI.DataAccess.OracleHelper.GetConnection() in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 18-01-2023 13:38:47   |      |   ORA-28001: the password has expired
+    at URSAPI.DataAccess.OracleHelper.GetConnection() in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 18-01-2023 13:38:47   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 18-01-2023 13:38:47   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| ORA-28001: the password has expired
+    at URSAPI.DataAccess.OracleHelper.GetConnection() in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 18-01-2023 13:38:47   |      |   ORA-28001: the password has expired
+    at URSAPI.DataAccess.OracleHelper.GetConnection() in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 18-01-2023 13:41:11   |      |   Call API Start :  Login Details
+ 18-01-2023 13:41:42   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 18-01-2023 13:41:42   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| ORA-28001: the password has expired
+    at URSAPI.DataAccess.OracleHelper.GetConnection() in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 18-01-2023 13:41:42   |      |   ORA-28001: the password has expired
+    at URSAPI.DataAccess.OracleHelper.GetConnection() in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 18-01-2023 13:41:42   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 18-01-2023 13:41:42   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| ORA-28001: the password has expired
+    at URSAPI.DataAccess.OracleHelper.GetConnection() in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 18-01-2023 13:41:42   |      |   ORA-28001: the password has expired
+    at URSAPI.DataAccess.OracleHelper.GetConnection() in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in D:\SBI\MyURSPortal-20220727T091306Z-001\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 18-01-2023 17:25:42   |      |   Call API Start :  Login Details
+ 18-01-2023 17:25:53   |      |   GetHttpResponseMessage Start GetloginDetails
+ 18-01-2023 17:25:53   |      |   GetHttpResponseMessage End GetloginDetails
+ 18-01-2023 17:25:59   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 17:25:59   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 17:27:01   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 17:27:01   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 17:28:20   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 17:28:20   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 17:28:46   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 17:28:46   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 17:34:25   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 17:34:25   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 17:35:32   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 17:35:32   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 17:36:37   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 17:36:37   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 17:37:27   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 17:37:27   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:23:31   |      |   Call API Start :  Login Details
+ 18-01-2023 18:23:34   |      |   GetHttpResponseMessage Start GetloginDetails
+ 18-01-2023 18:23:34   |      |   GetHttpResponseMessage End GetloginDetails
+ 18-01-2023 18:23:37   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:23:37   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:24:07   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:24:07   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:30:56   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:30:57   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:34:26   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:34:26   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:38:32   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:38:32   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:39:57   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:39:57   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:41:27   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:41:27   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:42:16   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:42:16   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:43:19   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:43:19   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:43:39   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:43:39   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:44:10   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:44:10   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:46:11   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:46:11   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:48:21   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:48:21   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:50:46   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:50:46   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:51:39   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:51:39   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 18:53:21   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 18:53:21   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 19:04:01   |      |   Call API Start :  Login Details
+ 18-01-2023 19:04:02   |      |   GetHttpResponseMessage Start GetloginDetails
+ 18-01-2023 19:04:02   |      |   GetHttpResponseMessage End GetloginDetails
+ 18-01-2023 19:04:09   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 19:04:09   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 19:04:38   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 19:04:38   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 19:07:00   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 19:07:00   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 19:11:32   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 19:11:32   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:16:32   |      |   Call API Start :  Login Details
+ 18-01-2023 20:16:32   |      |   GetHttpResponseMessage Start GetloginDetails
+ 18-01-2023 20:16:32   |      |   GetHttpResponseMessage End GetloginDetails
+ 18-01-2023 20:16:38   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:16:38   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:17:24   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:17:24   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:23:38   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:23:38   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:24:37   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:24:37   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:28:17   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:28:17   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:28:51   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:28:51   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:29:23   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:29:23   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:32:04   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:32:04   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:33:19   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:33:19   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:34:36   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:34:36   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:37:43   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:37:43   |      |   GetHttpResponseMessage End GetMenuList
+ 18-01-2023 20:38:40   |      |   GetHttpResponseMessage Start GetMenuList
+ 18-01-2023 20:38:40   |      |   GetHttpResponseMessage End GetMenuList

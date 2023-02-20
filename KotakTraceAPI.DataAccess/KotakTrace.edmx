@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KotakTraceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_Assigned_MenuMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Role_Id" Type="int" Nullable="false" />
+          <Property Name="Menu_Id" Type="int" Nullable="false" />
+          <Property Name="Created_By" Type="int" Nullable="false" />
+          <Property Name="Created_Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_Assigned_RoleMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Emp_Id" Type="int" Nullable="false" />
+          <Property Name="Role_Id" Type="int" Nullable="false" />
+          <Property Name="Created_By" Type="int" Nullable="false" />
+          <Property Name="Created_Date" Type="datetime" />
+          <Property Name="Updated_By" Type="int" Nullable="false" />
+          <Property Name="Updated_Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_Employee">
+          <Key>
+            <PropertyRef Name="Emp_Id" />
+          </Key>
+          <Property Name="Emp_Id" Type="int" Nullable="false" />
+          <Property Name="Emp_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Email_Id" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="Created_Date" Type="datetime" />
+          <Property Name="Updated_Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_Login_History">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="IP_Address" Type="nvarchar" MaxLength="50" />
+          <Property Name="System_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Host_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Login_Date" Type="datetime" />
+          <Property Name="Emp_Id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_MenuMaster">
+          <Key>
+            <PropertyRef Name="Menu_Id" />
+          </Key>
+          <Property Name="Menu_Id" Type="int" Nullable="false" />
+          <Property Name="Menu_Name" Type="varchar" MaxLength="50" />
+          <Property Name="URL" Type="nvarchar(max)" />
+          <Property Name="Icon" Type="nvarchar(max)" />
+          <Property Name="IsParent" Type="int" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="MenuOrder" Type="int" />
+          <Property Name="IsActive" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_RoleMaster">
+          <Key>
+            <PropertyRef Name="Role_Id" />
+          </Key>
+          <Property Name="Role_Id" Type="int" Nullable="false" />
+          <Property Name="Role" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="Created_Date" Type="datetime" />
+          <Property Name="Updated_Date" Type="datetime" />
+        </EntityType>
+        <Function Name="SP_MenuBind" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Emp_Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_VerifyLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Username" Type="nvarchar" Mode="In" />
+          <Parameter Name="Password" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="KotakTraceModelStoreContainer">
+          <EntitySet Name="tbl_Assigned_MenuMaster" EntityType="Self.tbl_Assigned_MenuMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Assigned_RoleMaster" EntityType="Self.tbl_Assigned_RoleMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Employee" EntityType="Self.tbl_Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_Login_History" EntityType="Self.tbl_Login_History" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_MenuMaster" EntityType="Self.tbl_MenuMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_RoleMaster" EntityType="Self.tbl_RoleMaster" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KotakTraceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tbl_Assigned_MenuMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Role_Id" Type="Int32" Nullable="false" />
+          <Property Name="Menu_Id" Type="Int32" Nullable="false" />
+          <Property Name="Created_By" Type="Int32" Nullable="false" />
+          <Property Name="Created_Date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tbl_Assigned_RoleMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Emp_Id" Type="Int32" Nullable="false" />
+          <Property Name="Role_Id" Type="Int32" Nullable="false" />
+          <Property Name="Created_By" Type="Int32" Nullable="false" />
+          <Property Name="Created_Date" Type="DateTime" Precision="3" />
+          <Property Name="Updated_By" Type="Int32" Nullable="false" />
+          <Property Name="Updated_Date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tbl_Employee">
+          <Key>
+            <PropertyRef Name="Emp_Id" />
+          </Key>
+          <Property Name="Emp_Id" Type="Int32" Nullable="false" />
+          <Property Name="Emp_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="Created_Date" Type="DateTime" Precision="3" />
+          <Property Name="Updated_Date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="tbl_Login_History">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="IP_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="System_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Host_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Login_Date" Type="DateTime" Precision="3" />
+          <Property Name="Emp_Id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_MenuMaster">
+          <Key>
+            <PropertyRef Name="Menu_Id" />
+          </Key>
+          <Property Name="Menu_Id" Type="Int32" Nullable="false" />
+          <Property Name="Menu_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="URL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Icon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IsParent" Type="Int32" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="MenuOrder" Type="Int32" />
+          <Property Name="IsActive" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tbl_RoleMaster">
+          <Key>
+            <PropertyRef Name="Role_Id" />
+          </Key>
+          <Property Name="Role_Id" Type="Int32" Nullable="false" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="Created_Date" Type="DateTime" Precision="3" />
+          <Property Name="Updated_Date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="KotakTraceEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Assigned_MenuMaster" EntityType="Self.tbl_Assigned_MenuMaster" />
+          <EntitySet Name="tbl_Assigned_RoleMaster" EntityType="Self.tbl_Assigned_RoleMaster" />
+          <EntitySet Name="tbl_Employee" EntityType="Self.tbl_Employee" />
+          <EntitySet Name="tbl_Login_History" EntityType="Self.tbl_Login_History" />
+          <EntitySet Name="tbl_MenuMaster" EntityType="Self.tbl_MenuMaster" />
+          <EntitySet Name="tbl_RoleMaster" EntityType="Self.tbl_RoleMaster" />
+          <FunctionImport Name="SP_MenuBind" ReturnType="Collection(KotakTraceModel.SP_MenuBind_Result)">
+            <Parameter Name="Emp_Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_VerifyLogin" ReturnType="Collection(KotakTraceModel.SP_VerifyLogin_Result)">
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="SP_MenuBind_Result">
+          <Property Type="Int32" Name="Menu_Id" Nullable="false" />
+          <Property Type="String" Name="Menu_Name" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="MenuOrder" Nullable="true" />
+          <Property Type="Int32" Name="ParentId" Nullable="true" />
+          <Property Type="String" Name="URL" Nullable="true" />
+          <Property Type="Int32" Name="Role_Id" Nullable="false" />
+          <Property Type="String" Name="Icon" Nullable="true" />
+          <Property Type="Int32" Name="IsActive" Nullable="true" />
+          <Property Type="Int32" Name="IsParent" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_VerifyLogin_Result">
+          <Property Type="Int32" Name="Emp_Id" Nullable="false" />
+          <Property Type="String" Name="Emp_Name" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Email_Id" Nullable="true" MaxLength="50" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KotakTraceModelStoreContainer" CdmEntityContainer="KotakTraceEntities">
+          <EntitySetMapping Name="tbl_Assigned_MenuMaster">
+            <EntityTypeMapping TypeName="KotakTraceModel.tbl_Assigned_MenuMaster">
+              <MappingFragment StoreEntitySet="tbl_Assigned_MenuMaster">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+                <ScalarProperty Name="Menu_Id" ColumnName="Menu_Id" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Assigned_RoleMaster">
+            <EntityTypeMapping TypeName="KotakTraceModel.tbl_Assigned_RoleMaster">
+              <MappingFragment StoreEntitySet="tbl_Assigned_RoleMaster">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+                <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+                <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+                <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+                <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+                <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Employee">
+            <EntityTypeMapping TypeName="KotakTraceModel.tbl_Employee">
+              <MappingFragment StoreEntitySet="tbl_Employee">
+                <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+                <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+                <ScalarProperty Name="Email_Id" ColumnName="Email_Id" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+                <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_Login_History">
+            <EntityTypeMapping TypeName="KotakTraceModel.tbl_Login_History">
+              <MappingFragment StoreEntitySet="tbl_Login_History">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IP_Address" ColumnName="IP_Address" />
+                <ScalarProperty Name="System_Name" ColumnName="System_Name" />
+                <ScalarProperty Name="Host_Name" ColumnName="Host_Name" />
+                <ScalarProperty Name="Login_Date" ColumnName="Login_Date" />
+                <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_MenuMaster">
+            <EntityTypeMapping TypeName="KotakTraceModel.tbl_MenuMaster">
+              <MappingFragment StoreEntitySet="tbl_MenuMaster">
+                <ScalarProperty Name="Menu_Id" ColumnName="Menu_Id" />
+                <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="IsParent" ColumnName="IsParent" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="MenuOrder" ColumnName="MenuOrder" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_RoleMaster">
+            <EntityTypeMapping TypeName="KotakTraceModel.tbl_RoleMaster">
+              <MappingFragment StoreEntitySet="tbl_RoleMaster">
+                <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+                <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_MenuBind" FunctionName="KotakTraceModel.Store.SP_MenuBind">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KotakTraceModel.SP_MenuBind_Result">
+                <ScalarProperty Name="Menu_Id" ColumnName="Menu_Id" />
+                <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+                <ScalarProperty Name="MenuOrder" ColumnName="MenuOrder" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsParent" ColumnName="IsParent" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_VerifyLogin" FunctionName="KotakTraceModel.Store.SP_VerifyLogin">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="KotakTraceModel.SP_VerifyLogin_Result">
+                <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+                <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+                <ScalarProperty Name="Email_Id" ColumnName="Email_Id" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

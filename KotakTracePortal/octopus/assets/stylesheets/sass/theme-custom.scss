@@ -1,0 +1,17 @@
+/* Add here all your CSS customizations */
+$red-color:#dc1e24;
+.sidebar-left .nano{ }
+ul.nav-main li .nav-children li a{
+   color:$red-color;
+}
+.sidebar-left{ 
+    .sidebar-header{
+            .sidebar-toggle{background-color:transparent!important}
+                    }
+
+}
+
+ul.nav-main li .nav-children li:hover a{ color:$red-color}
+.form-control{
+
+}

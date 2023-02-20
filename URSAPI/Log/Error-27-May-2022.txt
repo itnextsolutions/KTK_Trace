@@ -1,0 +1,48 @@
+
+ 27-05-2022 11:21:21   |      |   Call API Start :  Login Details
+ 27-05-2022 11:21:57   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 27-05-2022 11:21:57   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 27-05-2022 11:21:57   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 27-05-2022 11:21:57   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 27-05-2022 11:21:57   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 27-05-2022 11:21:57   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()

@@ -1,0 +1,650 @@
+
+ 07-06-2022 12:00:28   |      |   Call API Start :  Login Details
+ 07-06-2022 12:00:40   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 12:00:40   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 12:00:42   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:00:42   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:00:58   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 12:00:58   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 12:00:59   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:00:59   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:02:44   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 07-06-2022 12:02:44   |      |   GetHttpResponseMessage End GetUserRoleList
+ 07-06-2022 12:03:59   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:03:59   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:05:41   |      |   Call API Start :  Login Details
+ 07-06-2022 12:05:42   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 12:05:42   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 12:05:46   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:05:46   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:06:02   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 12:06:02   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 12:06:02   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:06:02   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:06:28   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 07-06-2022 12:06:28   |      |   GetHttpResponseMessage End GetUserRoleList
+ 07-06-2022 12:07:14   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:07:14   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:11:26   |      |   Call API Start :  Login Details
+ 07-06-2022 12:11:27   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 12:11:28   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 12:11:29   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:11:29   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:11:57   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 12:11:57   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 12:11:57   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:11:57   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:12:15   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 07-06-2022 12:12:15   |      |   GetHttpResponseMessage End GetUserRoleList
+ 07-06-2022 12:12:28   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:12:28   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:15:54   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 12:15:54   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 12:15:55   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:15:55   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:16:15   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 07-06-2022 12:16:15   |      |   GetHttpResponseMessage End GetUserRoleList
+ 07-06-2022 12:16:17   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:16:17   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:17:14   |      |   Call API Start :  Login Details
+ 07-06-2022 12:17:15   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 12:17:15   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 12:17:21   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:17:21   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:17:33   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 12:17:33   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 12:17:33   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:17:33   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:17:51   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 07-06-2022 12:17:51   |      |   GetHttpResponseMessage End GetUserRoleList
+ 07-06-2022 12:17:57   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:17:57   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:41:37   |      |   Call API Start :  Login Details
+ 07-06-2022 12:41:52   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 12:41:53   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 12:41:55   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:41:55   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:42:13   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 12:42:13   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 12:42:13   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:42:13   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 12:42:46   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 07-06-2022 12:42:46   |      |   GetHttpResponseMessage End GetUserRoleList
+ 07-06-2022 12:42:46   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 12:42:46   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:44:30   |      |   Call API Start :  Login Details
+ 07-06-2022 17:44:52   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 17:44:52   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 17:44:59   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:44:59   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:47:51   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 17:47:51   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 17:47:51   |      |   ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 17:48:12   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:48:12   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:53:20   |      |   Call API Start :  Login Details
+ 07-06-2022 17:53:22   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 17:53:22   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 17:53:23   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:53:23   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:55:14   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 17:55:14   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 17:55:14   |      |   ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 17:55:19   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:55:19   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:55:23   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 17:55:23   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 17:55:24   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:55:24   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:56:06   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 17:56:06   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/AddUserRoleList |Exception| ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'ADDUSERROLELIST'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 105
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 17:56:06   |      |   ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'ADDUSERROLELIST'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 105
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 17:56:10   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:56:10   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:56:19   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 17:56:19   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 17:56:19   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:56:19   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:57:04   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 17:57:04   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/AddUserRoleList |Exception| ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'ADDUSERROLELIST'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 105
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 17:57:04   |      |   ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'ADDUSERROLELIST'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 105
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 17:57:06   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:57:06   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:57:14   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 17:57:14   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 17:57:14   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:57:14   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 17:59:28   |      |   Call API Start :  Login Details
+ 07-06-2022 17:59:30   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 17:59:31   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 17:59:31   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 17:59:31   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:00:15   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 18:00:16   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 18:00:16   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:00:16   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:08:56   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 18:09:03   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/AddUserRoleList |Exception| ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'ADDUSERROLELIST'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 105
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:09:03   |      |   ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'ADDUSERROLELIST'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 105
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:09:05   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:09:06   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:09:13   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 18:09:13   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 18:09:14   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:09:14   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:11:36   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 18:11:36   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/AddUserRoleList |Exception| ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'ADDUSERROLELIST'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms)
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY)
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:11:37   |      |   ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'ADDUSERROLELIST'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms)
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY)
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:11:37   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:11:37   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:11:43   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 18:11:43   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 18:11:43   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:11:43   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:12:36   |      |   GetHttpResponseMessage Start AddUserRoleList
+ 07-06-2022 18:12:36   |      |   GetHttpResponseMessage End AddUserRoleList
+ 07-06-2022 18:12:36   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:12:36   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:17:38   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 18:17:38   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 18:17:38   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:17:38   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:18:30   |      |   GetHttpResponseMessage Start AddUserRoleList
+ 07-06-2022 18:18:30   |      |   GetHttpResponseMessage End AddUserRoleList
+ 07-06-2022 18:18:30   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:18:30   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:18:36   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 18:18:36   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 18:18:36   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:18:36   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:25:17   |      |   Call API Start :  Login Details
+ 07-06-2022 18:25:25   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 18:25:26   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 18:25:31   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:25:31   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:25:52   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 18:25:52   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 18:25:52   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:25:52   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:29:30   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 18:29:31   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/AddUserRoleList |Exception| ORA-01722: invalid number
+ORA-06512: at "SYSTEM.PKG_ROLES", line 37
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 105
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:29:32   |      |   ORA-01722: invalid number
+ORA-06512: at "SYSTEM.PKG_ROLES", line 37
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 105
+   at URSAPI.Business.UserRoleBL.AddUserRoleList(String ROLEID, String EMPNO, String CREATEDBY) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 42
+   at URSAPI.Controllers.UserRoleController.AddUserRoleList(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 48
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:29:32   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:29:32   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:29:40   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-06-2022 18:29:40   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-06-2022 18:29:40   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:29:40   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:33:30   |      |   Call API Start :  Login Details
+ 07-06-2022 18:33:32   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 18:33:32   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 18:33:33   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:33:33   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:52:24   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 18:52:25   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:52:25   |      |   ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:52:27   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:52:27   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:52:34   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 18:52:34   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:52:34   |      |   ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:52:36   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:52:36   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:53:35   |      |   Call API Start :  Login Details
+ 07-06-2022 18:53:38   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-06-2022 18:53:38   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-06-2022 18:53:39   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:53:39   |      |   GetHttpResponseMessage End GetMenuList
+ 07-06-2022 18:54:30   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 07-06-2022 18:54:30   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:54:30   |      |   ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 07-06-2022 18:54:33   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-06-2022 18:54:33   |      |   GetHttpResponseMessage End GetMenuList

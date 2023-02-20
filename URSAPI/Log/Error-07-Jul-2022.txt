@@ -1,0 +1,30 @@
+
+ 07-07-2022 11:41:26   |      |   Call API Start :  Login Details
+ 07-07-2022 11:41:44   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-07-2022 11:41:45   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-07-2022 11:42:37   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-07-2022 11:42:37   |      |   GetHttpResponseMessage End GetMenuList
+ 07-07-2022 11:43:45   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-07-2022 11:43:45   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-07-2022 11:43:46   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-07-2022 11:43:46   |      |   GetHttpResponseMessage End GetMenuList
+ 07-07-2022 11:44:23   |      |   GetHttpResponseMessage Start AddUserRoleList
+ 07-07-2022 11:44:23   |      |   GetHttpResponseMessage End AddUserRoleList
+ 07-07-2022 11:44:23   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-07-2022 11:44:23   |      |   GetHttpResponseMessage End GetMenuList
+ 07-07-2022 11:45:03   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 07-07-2022 11:45:03   |      |   GetHttpResponseMessage End GetUserDetailList
+ 07-07-2022 11:45:03   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-07-2022 11:45:03   |      |   GetHttpResponseMessage End GetMenuList
+ 07-07-2022 11:45:41   |      |   GetHttpResponseMessage Start AddUserRoleList
+ 07-07-2022 11:45:41   |      |   GetHttpResponseMessage End AddUserRoleList
+ 07-07-2022 11:45:41   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-07-2022 11:45:41   |      |   GetHttpResponseMessage End GetMenuList
+ 07-07-2022 11:46:54   |      |   GetHttpResponseMessage Start DeleteUserRole
+ 07-07-2022 11:46:54   |      |   GetHttpResponseMessage End DeleteUserRole
+ 07-07-2022 11:46:57   |      |   GetHttpResponseMessage Start DeleteUserRole
+ 07-07-2022 11:46:57   |      |   GetHttpResponseMessage End DeleteUserRole
+ 07-07-2022 11:48:11   |      |   GetHttpResponseMessage Start DeleteUserRole
+ 07-07-2022 11:48:11   |      |   GetHttpResponseMessage End DeleteUserRole
+ 07-07-2022 11:48:14   |      |   GetHttpResponseMessage Start DeleteUserRole
+ 07-07-2022 11:48:14   |      |   GetHttpResponseMessage End DeleteUserRole

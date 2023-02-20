@@ -1,0 +1,2 @@
+D:\Vikas\Projects\Kotak\KotakTracePortal\KotakTracePortal.Business\obj\Debug\KotakTracePortal.Business.csproj.AssemblyReference.cache
+D:\Vikas\Projects\Kotak\KotakTracePortal\KotakTracePortal.Business\obj\Debug\KotakTracePortal.Business.csproj.CoreCompileInputs.cache

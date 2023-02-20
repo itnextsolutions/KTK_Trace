@@ -1,0 +1,232 @@
+
+ 03-06-2022 14:15:50   |      |   Call API Start :  Login Details
+ 03-06-2022 14:15:58   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 14:15:58   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 14:16:27   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 14:16:27   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 14:19:01   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 14:19:01   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 14:33:35   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 14:33:35   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 14:33:38   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 14:33:38   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 14:33:39   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 14:33:39   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 15:03:36   |      |   Call API Start :  Login Details
+ 03-06-2022 15:03:39   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 15:03:39   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 15:08:12   |      |   Call API Start :  Login Details
+ 03-06-2022 15:08:12   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 15:08:12   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 15:08:33   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 15:08:33   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 15:12:11   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 03-06-2022 15:12:11   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 03-06-2022 15:12:11   |      |   ORA-04063: package body "SYSTEM.PKG_ROLES" has errors
+ORA-06508: PL/SQL: could not find program unit being called: "SYSTEM.PKG_ROLES"
+ORA-06512: at line 1
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataset(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 516
+   at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 03-06-2022 15:13:08   |      |   Call API Start :  Login Details
+ 03-06-2022 15:13:09   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 15:13:09   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 15:13:10   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 15:13:10   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 15:13:51   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 15:13:51   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 15:13:51   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 15:13:51   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 15:48:12   |      |   Call API Start :  Login Details
+ 03-06-2022 15:48:22   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 15:48:22   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 15:48:26   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 15:48:26   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 15:48:58   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 15:48:58   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 15:49:00   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 15:49:00   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 15:53:05   |      |   Call API Start :  Login Details
+ 03-06-2022 15:53:08   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 15:53:08   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 15:53:09   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 15:53:09   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 15:53:30   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 15:53:30   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 15:53:30   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 15:53:30   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 15:57:21   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 03-06-2022 15:57:21   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserRoleList |Exception| ORA-06550: line 1, column 17:
+PLS-00302: component 'SEARCHUSERROLELIST' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.GetUserRoleList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 62
+   at URSAPI.Business.UserRoleBL.GetUserRoleList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 37
+   at URSAPI.Controllers.UserRoleController.GetUserRoleList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 03-06-2022 15:57:21   |      |   ORA-06550: line 1, column 17:
+PLS-00302: component 'SEARCHUSERROLELIST' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+    at URSAPI.DataAccess.OracleHelper.ExecuteDataTable(OracleConnection conn, CommandType cmdType, String cmdText, OracleParameter[] cmdParms) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 431
+   at URSAPI.DataAccess.UserRoleDL.GetUserRoleList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 62
+   at URSAPI.Business.UserRoleBL.GetUserRoleList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 37
+   at URSAPI.Controllers.UserRoleController.GetUserRoleList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 03-06-2022 15:57:41   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 15:57:41   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:02:07   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:02:07   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:02:10   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:02:10   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:02:31   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 16:02:31   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 16:02:31   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:02:31   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:02:59   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:02:59   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:03:13   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:03:13   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:04:09   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:04:09   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:04:35   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:04:35   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:05:19   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 16:05:19   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 16:05:19   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:05:19   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:08:32   |      |   Call API Start :  Login Details
+ 03-06-2022 16:08:35   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 16:08:35   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 16:08:36   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:08:36   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:08:59   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 16:08:59   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 16:08:59   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:08:59   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:09:15   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:09:15   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:09:16   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:09:16   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:09:53   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:09:53   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:12:15   |      |   Call API Start :  Login Details
+ 03-06-2022 16:12:18   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 16:12:18   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 16:12:22   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:12:22   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:12:45   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 16:12:45   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 16:12:47   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:12:47   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:13:27   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:13:27   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:13:36   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:13:36   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:14:02   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:14:03   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:14:04   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:14:04   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:14:15   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 16:14:15   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 16:14:16   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:14:16   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:14:48   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:14:48   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:17:21   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:17:21   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:19:47   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:19:47   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:20:00   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:20:00   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:20:07   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 16:20:07   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 16:20:07   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:20:07   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:20:17   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:20:17   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:22:35   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:22:35   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:23:44   |      |   Call API Start :  Login Details
+ 03-06-2022 16:23:45   |      |   GetHttpResponseMessage Start GetloginDetails
+ 03-06-2022 16:23:45   |      |   GetHttpResponseMessage End GetloginDetails
+ 03-06-2022 16:23:46   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:23:46   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:24:17   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 03-06-2022 16:24:17   |      |   GetHttpResponseMessage End GetUserDetailList
+ 03-06-2022 16:24:17   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:24:17   |      |   GetHttpResponseMessage End GetMenuList
+ 03-06-2022 16:26:04   |      |   GetHttpResponseMessage Start GetUserRoleList
+ 03-06-2022 16:26:05   |      |   GetHttpResponseMessage End GetUserRoleList
+ 03-06-2022 16:27:24   |      |   GetHttpResponseMessage Start GetMenuList
+ 03-06-2022 16:27:24   |      |   GetHttpResponseMessage End GetMenuList

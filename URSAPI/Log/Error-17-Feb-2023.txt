@@ -1,0 +1,98 @@
+
+ 2/17/2023 7:34:39 PM   |      |   Call API Start :  Login Details
+ 2/17/2023 7:40:11 PM   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 2/17/2023 7:40:11 PM   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| The value's length for key 'data source' exceeds it's limit of '128'.    at KotakTraceAPI.DataAccess.SqlHelper.GetConnection() in C:\KotakTracePortal\KotakTracePortal\KotakTraceAPI.DataAccess\SqlHelper.cs:line 52
+   at KotakTraceAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password) in C:\KotakTracePortal\KotakTracePortal\KotakTraceAPI.DataAccess\LoginDL.cs:line 41
+   at KotakTraceAPI.Business.LoginBL.GetloginDetails(String Username, String Password) in C:\KotakTracePortal\KotakTracePortal\URSAPI.Business\LoginBL.cs:line 30
+   at KotakTraceAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\KotakTracePortal\KotakTracePortal\URSAPI\Controllers\LoginController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 2/17/2023 7:40:11 PM   |      |   The value's length for key 'data source' exceeds it's limit of '128'.    at KotakTraceAPI.DataAccess.SqlHelper.GetConnection() in C:\KotakTracePortal\KotakTracePortal\KotakTraceAPI.DataAccess\SqlHelper.cs:line 52
+   at KotakTraceAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password) in C:\KotakTracePortal\KotakTracePortal\KotakTraceAPI.DataAccess\LoginDL.cs:line 41
+   at KotakTraceAPI.Business.LoginBL.GetloginDetails(String Username, String Password) in C:\KotakTracePortal\KotakTracePortal\URSAPI.Business\LoginBL.cs:line 30
+   at KotakTraceAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\KotakTracePortal\KotakTracePortal\URSAPI\Controllers\LoginController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 2/17/2023 7:40:11 PM   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 2/17/2023 7:40:11 PM   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| The value's length for key 'data source' exceeds it's limit of '128'.    at KotakTraceAPI.DataAccess.SqlHelper.GetConnection() in C:\KotakTracePortal\KotakTracePortal\KotakTraceAPI.DataAccess\SqlHelper.cs:line 52
+   at KotakTraceAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password) in C:\KotakTracePortal\KotakTracePortal\KotakTraceAPI.DataAccess\LoginDL.cs:line 41
+   at KotakTraceAPI.Business.LoginBL.GetloginDetails(String Username, String Password) in C:\KotakTracePortal\KotakTracePortal\URSAPI.Business\LoginBL.cs:line 30
+   at KotakTraceAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\KotakTracePortal\KotakTracePortal\URSAPI\Controllers\LoginController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 2/17/2023 7:40:11 PM   |      |   The value's length for key 'data source' exceeds it's limit of '128'.    at KotakTraceAPI.DataAccess.SqlHelper.GetConnection() in C:\KotakTracePortal\KotakTracePortal\KotakTraceAPI.DataAccess\SqlHelper.cs:line 52
+   at KotakTraceAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password) in C:\KotakTracePortal\KotakTracePortal\KotakTraceAPI.DataAccess\LoginDL.cs:line 41
+   at KotakTraceAPI.Business.LoginBL.GetloginDetails(String Username, String Password) in C:\KotakTracePortal\KotakTracePortal\URSAPI.Business\LoginBL.cs:line 30
+   at KotakTraceAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\KotakTracePortal\KotakTracePortal\URSAPI\Controllers\LoginController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 2/17/2023 7:41:38 PM   |      |   Call API Start :  Login Details
+ 2/17/2023 7:42:28 PM   |      |   GetHttpResponseMessage Start GetloginDetails
+ 2/17/2023 7:42:28 PM   |      |   GetHttpResponseMessage End GetloginDetails
+ 2/17/2023 7:45:22 PM   |      |   Call API Start :  Login Details
+ 2/17/2023 7:45:24 PM   |      |   GetHttpResponseMessage Start GetloginDetails
+ 2/17/2023 7:45:24 PM   |      |   GetHttpResponseMessage End GetloginDetails
+ 2/17/2023 8:42:12 PM   |      |   Call API Start :  Login Details
+ 2/17/2023 8:42:14 PM   |      |   GetHttpResponseMessage Start GetloginDetails
+ 2/17/2023 8:42:14 PM   |      |   GetHttpResponseMessage End GetloginDetails
+ 2/17/2023 8:42:45 PM   |      |   Call API Start :  Login Details
+ 2/17/2023 8:42:47 PM   |      |   GetHttpResponseMessage Start GetloginDetails
+ 2/17/2023 8:42:47 PM   |      |   GetHttpResponseMessage End GetloginDetails
+ 2/17/2023 8:43:06 PM   |      |   Call API Start :  Login Details
+ 2/17/2023 8:43:08 PM   |      |   GetHttpResponseMessage Start GetloginDetails
+ 2/17/2023 8:43:08 PM   |      |   GetHttpResponseMessage End GetloginDetails
+ 2/17/2023 8:44:53 PM   |      |   Call API Start :  Login Details
+ 2/17/2023 8:44:55 PM   |      |   GetHttpResponseMessage Start GetloginDetails
+ 2/17/2023 8:44:55 PM   |      |   GetHttpResponseMessage End GetloginDetails

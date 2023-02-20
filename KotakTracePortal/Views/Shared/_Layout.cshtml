@@ -1,0 +1,749 @@
+﻿@using KotakTracePortal.Buisness;
+
+<!DOCTYPE html>
+<html class="fixed sidebar-left-collapsed">
+<head>
+
+    <style>
+        .datepickerbckg {
+            background-color: white !important;
+        }
+
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('../octopus/assets/images/download.png') 50% 50% no-repeat rgb(249,249,249);
+            opacity: .8;
+        }
+
+        .dt-button.buttons-excel.buttons-html5 {
+            /*background-color: #2dad43 !important;*/
+            /*font-weight: bold !important;*/
+            /*color: #0c0b0b !important;*/
+            /*float:right;*/
+            /*margin:10px 10px 10px 10px;*/
+            float: left !important;
+            text-align: center;
+            display: inline-block;
+            width: auto;
+            background-color: #fff !important;
+            border: none !important;
+            border-radius: 5px !important;
+            font-weight: 600 !important;
+            /*padding: 6px 15px;*/
+            text-transform: uppercase !important;
+            outline: none;
+        }
+
+        div.dataTables_wrapper div.dataTables_filter {
+            text-align: left !important;
+            float: right !important;
+        }
+
+        i.fa-plus-circle {
+            color: gray !important;
+        }
+
+        i.fa-minus-circle {
+            color: gray !important;
+        }
+
+        i.fa-eye {
+            color: gray !important;
+        }
+
+        .iRejectcolor {
+            color: #dc0812 !important;
+        }
+
+        input[type=search] {
+            border-color: #d80d0d;
+            -webkit-text-fill-color: #1e211e;
+        }
+    </style>
+    <style>
+        #modalContainer {
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            z-index: 10000;
+            background-image: url(tp.png); /* required by MSIE to prevent actions on lower z-index elements */
+        }
+
+        #alertBox {
+            position: relative;
+            width: 33%;
+            min-height: 100px;
+            max-height: 400px;
+            margin-top: 50px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            top: 30%;
+            transition: opacity 0.6s;
+        }
+
+        #modalContainer > #alertBox {
+            position: fixed;
+        }
+
+        #alertBox h1 {
+            margin: 0;
+            font: bold 1em Raleway,arial;
+            background-color: #f01739;
+            color: #FFF;
+            border-bottom: 1px solid #f97352;
+            padding: 10px 0 10px 5px;
+        }
+
+        #alertBox p {
+            height: 50px;
+            padding-left: 5px;
+            padding-top: 30px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #alertBox #closeBtn {
+            display: block;
+            position: relative;
+            margin: 10px auto 10px auto;
+            padding: 7px;
+            border: 0 none;
+            width: 70px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFF;
+            background-color: #f01739;
+            border-radius: 0px;
+            text-decoration: none;
+            outline: 0 !important;
+        }
+
+        /* unrelated styles */
+
+        #mContainer {
+            position: relative;
+            width: 600px;
+            margin: auto;
+            padding: 5px;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 4px;
+        }
+
+        code {
+            font-size: 1.2em;
+            color: #069;
+        }
+
+        #credits {
+            position: relative;
+            margin: 25px auto 0px auto;
+            width: 350px;
+            font: 0.7em verdana;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            height: 90px;
+            padding-top: 4px;
+        }
+
+            #credits img {
+                float: left;
+                margin: 5px 10px 5px 0px;
+                border: 1px solid #000000;
+                width: 80px;
+                height: 79px;
+            }
+
+        .important {
+            background-color: #F5FCC8;
+            padding: 2px;
+        }
+
+        #media (max-width: 600px) {
+            position: relative;
+            width: 90%;
+            top: 30%;
+        }
+
+
+        .isDisabled {
+            color: currentColor;
+            cursor: not-allowed;
+            opacity: 0.5;
+            text-decoration: none;
+        }
+
+        .userboxempname {
+            color: #3a3636;
+            font-size: 13px;
+            font-size: 1.3rem;
+            line-height: 1.2em;
+            font-weight: 600;
+            vertical-align: bottom;
+        }
+    </style>
+
+    <style>
+        media screen and (min-width: 768px) .jumbotron {
+            padding: 10px 0px 10px 0px !important;
+        }
+
+        .jumbotron {
+            padding: 30px 15px;
+            margin-bottom: 15px !important;
+            color: inherit;
+            background-color: #ded5d5 !important;
+        }
+    </style>
+
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+    <link rel="stylesheet" href="~/octopus/assets/vendor/bootstrap/css/bootstrap.min.css" />
+    @*@Styles.Render("~/Content/bootstrapcss")*@
+    @Styles.Render("~/Content/Commoncss")
+    @Styles.Render("~/Content/Vendorcss")
+    @Styles.Render("~/Content/ThemeCustomcss")
+
+    @*<link rel="shortcut icon" type="image/x-icon" href="~/favicon.png" />*@
+
+    <script src="~/Scripts/jquery-3.6.0.js"></script>
+    @*<script src="~/Scripts/jquery-3.5.1.js"></script>*@
+    @Scripts.Render("~/bundles/switch")
+</head>
+<body>
+    <button onclick="topFunction()" id="btnMoveTop" title="Go to top">Top</button>
+    <section class="body">
+        <!-- start: header -->
+        <header class="header navbar-fixed-top">
+            <div class="logo-container">
+                <a href="../Home/Home" class="logo">
+                    <img src="~/octopus/assets/images/IT_Next_Solutions_Logo.png" height="30" alt="SBI Life" />
+                </a>
+                <span class="dashboard-title">Advertising Tool</span>
+                <div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+                    <i class="la-bars la" aria-label="Toggle sidebar"></i>
+                </div>
+            </div>
+            <span style="padding-left:20%" class="userboxempname">Welcome @Session["EMPNAME"]</span>&nbsp;
+            @*<a style="padding-left:20%">Current Session :<label id="minutes">00</label>:<label id="seconds">00</label></a>&nbsp;*@
+
+            <!-- start: search & user box -->
+            <div class="header-right">
+                <span class="separator"></span>
+                <span class="separator"></span>
+                <a> Last Login Date : @Convert.ToString(Session["LASTLOGINDATE"])</a>
+                <div id="userbox" class="userbox">
+                    <a href="../Home/Home" style="vertical-align:top;    margin-top: -1px;">
+                        <i class="la la-home" style="color: #3a3636; line-height:34px;font-size: 2em;" onclick="location.href='@Url.Action("Home", "Home")'"></i>
+                    </a>
+                    <a href="#" data-toggle="dropdown">
+                        <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
+                            @*<span class="name"> &nbsp; @Session["EMPNAME"]</span>*@
+                            <span class="toggle-tigger user-thumb active" href="#"><em class="la la-user"></em></span>
+                            @Html.Hidden("EMPNAME", new { id = "EMPNAME" })
+                        </div>
+                        <i class="fa custom-caret"></i>
+                    </a>&nbsp;&nbsp;
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                            <li class="divider"></li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" id="Logout" onclick="location.href='@Url.Action("Logout", "Login")'"><i class="la la-power-off"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end: search & user box -->
+        </header>
+        <!-- end: header -->
+
+        <div class="inner-wrapper">
+            <!-- start: sidebar -->
+            <aside id="sidebar-left" class="sidebar-left">
+                <div class="nano">
+                    <div class="nano-content">
+                        <nav id="menu" class="nav-main" role="navigation">
+                            @{Html.RenderAction("GetMenu", "Home");}
+                            <ul class="nav nav-main">
+                                <li class="nav-parent">
+                                    <a>
+                                        <i class="la la-book lnr-xs lnr-apartment" aria-hidden="true"></i><span>URS</span>
+                                    </a>
+                                    <ul class="nav nav-children">
+                                        <li><a href='/URS/SearchURS'><i class='la la-edit lnr-xs lnr-apartment' aria-hidden='true'></i><span>URS Form </span></a></li>
+                                    </ul>
+                                    <ul class="nav nav-children">
+                                        <li><a href='/URS/AcceptURS'><i class='fa fa-exclamation-circle' aria-hidden='true'></i><span>URS Accept/Reject</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-active">
+                                    <a href="#"><i class="fa fa-question-circle"></i><span>Help</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+            <!-- end: sidebar -->
+
+            <section role="main" class="content-body">
+                <!-- start: page -->
+                <div class="row">
+                    @RenderBody()
+                </div>
+                <!-- end: page -->
+            </section>
+        </div>
+        <div class="loader"></div>
+
+    </section>
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/datatable")
+    @Scripts.Render("~/bundles/commonscript")
+
+    <script>
+
+        var SessionTimer;
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btnMoveTop").style.display = "block";
+            } else {
+                document.getElementById("btnMoveTop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            //document.body.scrollTop = 0;
+            //document.documentElement.scrollTop = 0;
+
+            $([document.documentElement, document.body]).animate({
+                scrollTop: 0
+            }, 2000);
+
+        }
+
+        //var minutesLabel = document.getElementById("minutes");
+        //var secondsLabel = document.getElementById("seconds");
+        //var totalSeconds = 0;
+        //setInterval(setTime, 1000);
+
+        $(document).ready(function () {
+            function disableBack() { window.history.forward() }
+
+            window.onload = disableBack();
+            window.onpageshow = function (evt) { if (evt.persisted) disableBack() }
+           // setTime();
+
+            //SessionTimer = parseInt($("#hdnSessionTimeout").val());
+            //setInterval("fnSessionRun()", 1000);
+
+        });
+
+        function setTime() {
+            ++totalSeconds;
+            secondsLabel.innerHTML = pad(totalSeconds % 60);
+            minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+        }
+
+        function pad(val) {
+            var valString = val + "";
+            if (valString.length < 2) {
+                return "0" + valString;
+            } else {
+                return valString;
+            }
+        }
+        $(window).load(function () {
+            $(".loader").fadeOut("slow");
+        });
+
+        window.onbeforeunload = function (e) {
+            $.ajax({
+                type: "POST",
+                url: "/Login/AppicationExist",
+                data: { sessionId: sessionId },
+                success: function (res) {
+                }
+            });
+        }
+
+        var ALERT_TITLE = "Alert";
+        var ALERT_BUTTON_TEXT = "Ok";
+
+        function createCustomAlert(txt) {
+            d = document;
+            if (d.getElementById("modalContainer")) return;
+            mObj = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
+            mObj.id = "modalContainer";
+            mObj.style.height = d.documentElement.scrollHeight + "px";
+
+            alertObj = mObj.appendChild(d.createElement("div"));
+            alertObj.id = "alertBox";
+
+            if (d.all && !window.opera) alertObj.style.top = document.documentElement.scrollTop + "px";
+            alertObj.style.left = (d.documentElement.scrollWidth - alertObj.offsetWidth) / 2 + "px";
+            alertObj.style.visiblity = "visible";
+
+            h1 = alertObj.appendChild(d.createElement("h1"));
+            h1.appendChild(d.createTextNode(ALERT_TITLE));
+
+            msg = alertObj.appendChild(d.createElement("p"));
+            //msg.appendChild(d.createTextNode(txt));
+            msg.innerHTML = txt;
+
+            btn = alertObj.appendChild(d.createElement("a"));
+            btn.id = "closeBtn";
+            btn.appendChild(d.createTextNode(ALERT_BUTTON_TEXT));
+            btn.href = "#";
+            btn.focus();
+            btn.onclick = function () { removeCustomAlert(); return false; }
+
+            alertObj.style.display = "block";
+
+
+        }
+
+        function removeCustomAlert() {
+            document.getElementsByTagName("body")[0].removeChild(document.getElementById("modalContainer"));
+        }
+        function ful() {
+            alert('Alert this pages');
+        }
+
+        $('.achortag').click(function () {
+            ShowLoader();
+        })
+
+        $(".modal-dismiss").click(function () {
+            HideLoader();
+        })
+
+        $(".btn-rounded").click(function () {
+            // ShowLoader();
+            var formid = "";
+            var parent = $(this).parents("form")[0];
+            if (parent == undefined) {
+            }
+            else {
+                formid = $(this).parents("form")[0].id;
+            }
+            if (formid != "") {
+                if ($('#' + formid).valid()) {
+                    ShowLoader();
+                }
+                else {
+
+                    var btnId = $(this).context.id;
+                    if (btnId == 'BtnBack') {
+                        ShowLoader();
+                    }
+                }
+            }
+            else {
+                ShowLoader();
+            }
+        })
+
+        function deletehistory() {
+            window.history.forward();
+        }
+
+        function ShowLoader() {
+            $(".loader").css("display", "block");
+        }
+
+        function HideLoader() {
+            $(".loader").css("display", "none");
+        }
+
+        function WarningSwal(Message) {
+            swal({
+                title: "Warning",
+                text: Message,
+                type: "warning",
+                showCancelButton: false,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+            function () {
+                swal.close();
+            });
+        }
+
+        function SimpleSwal(Message) {
+            swal({
+                title: "",
+                text: Message,
+                type: "info",
+                showCancelButton: false,
+                confirmButtonClass: "btn-primary",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+            function () {
+                swal.close();
+            });
+        }
+
+        function alert(Message) {
+            swal({
+                title: "Warning",
+                text: Message,
+                type: "warning",
+                showCancelButton: false,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+            function () {
+                swal.close();
+            });
+        }
+
+        function addCommas(x) {
+            var parts = x.toString().split(".");
+            parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            return parts.join(".");
+        }
+
+        function CommaseprateValue() {
+            var test_arr = $("input[class*='clscommavalue']");
+            $.each(test_arr, function (i, item) {
+                var amount = $(item).val();
+                if (amount != "") {
+                    amount = addCommas(amount);
+                    $(item).val(amount);
+                }
+
+            });
+        }
+
+        function RemoveCommaSetseprateValue() {
+            var test_arr = $("input[class*='clscommavalue']");
+            $.each(test_arr, function (i, item) {
+                var amount = $(item).val();
+                if (amount != "") {
+                    amount =  amount.replace(/,/g, "");
+                    $(item).val(amount);
+                }
+
+            });
+        }
+
+
+
+        $.fn.serializeObject = function () {
+                var o = {};
+             var a = this.serializeArray();
+             $.each(a, function () {
+                  if (o[this.name] !== undefined) {
+                         if (!o[this.name].push) {
+                               o[this.name] = [o[this.name]];
+                              }
+                          o[this.name].push(this.value || '');
+                        } else {
+                            o[this.name] = this.value || '';
+                           }
+                  });
+           return o;
+        };
+        function fnSessionRun() {
+            SessionTimer -= 1;
+            if (SessionTimer == 0) {
+                var formid = "";
+                var x = "";
+                var parent = $(this).parents("form")[0];
+                if (parent == undefined) {
+
+                }
+                else {
+                    formid = $(this).parents("form")[0].id;
+                    x = $('#' + formid).serializeArray();
+
+
+                }
+                var data = $("#URSRegistration").serialize().split("&");
+
+                var obj = {};
+                for (var key in data) {
+
+                    obj[data[key].split("=")[0]] = data[key].split("=")[1];
+                }
+                var form = $('#URSRegistration');
+                var token = $('input[name="__RequestVerificationToken"]', form).val();
+                //alert(data)
+                var ID = '@Session["EMPNAME"]';
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("AutoLogout", "Login")',
+
+                    data: {
+                        __RequestVerificationToken: token, objurs: obj
+                    },
+                    dataType: "json",
+
+                    success: function () { alert('Success'); }
+                });
+
+            }
+                    if (parseInt($("#hdnSessionExpNotice").val()) == SessionTimer) {
+
+                swal({
+                    title: "Warning",
+                    text: "Your session will expire in 10 seconds, Click Ok to remain logged in or click Cancel to log off.If you are logged off any changes will be lost.",
+                    type: "warning",
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "ok",
+                    showCancelButton: true,
+                    closeOnConfirm: false
+                },
+              function (isConfirm) {
+
+                  if (isConfirm) {
+                      SessionOKClick();
+
+                  } else {
+                      $("#Logout").click();
+                  }
+              });
+
+            }
+        }
+
+        function SessionOKClick() {
+            //ajax call to reset session
+            $.ajax({
+                url: $("#hdnAppPath").val() + '/Login/ResetSession/',
+                contentType: 'application/json',
+                dataType: 'json',
+                data: {},
+                success: function (data) {
+                    //  alert(data)
+                    $("#hdnSessionTimeout").val(parseInt(data));
+                    SessionTimer = parseInt($("#hdnSessionTimeout").val());
+                    swal.close();
+                }
+            });
+        }
+
+        function dateCompare(Startdate, Enddate) {
+            var aa = Startdate.split('/');
+            var bb = Enddate.split('/');
+
+            Startdate = (aa[2] + aa[1] + aa[0]) * 1;
+            Enddate = (bb[2] + bb[1] + bb[0]) * 1;
+
+            if (Enddate < Startdate) {
+                WarningSwal('Please ensure that the To Date is greater than to the From Date.');
+                return false;
+            }
+            else {
+                return true;
+            }
+
+
+        }
+
+        //this will add * next to required label
+        $('input[type=text],input[type=radio],input[type=checkbox],textarea,select,input[type=email],input[type=number]').each(function () {
+            var req = $(this).attr('data-val-required');
+            var exclude = $(this).attr('data-exclude');
+            if (undefined != req && undefined == exclude) {
+                var label = $('label[for="' + $(this).attr('id') + '"]');
+                var text = label.text();
+                if (text.length > 0) {
+                    label.append('<span style="color:red"> *</span>');
+                }
+            }
+        });
+
+        //Assign Click event to Plus Image.
+        $("body").on("click", ".bluesvg", function () {
+            $(this).closest("tr").after("<tr><td colspan = '999' class='nesTable'>" + $(this).next().html() + "</td></tr>");
+            $(this).attr("class", "fa fa-2x fa-minus-circle minussvg");
+        });
+
+        //Assign Click event to Minus Image.
+        $("body").on("click", ".minussvg", function () {
+            $(this).attr("class", "fa fa-2x fa-plus-circle bluesvg");
+            $(this).closest("tr").next().remove();
+        });
+
+        function isNumber(evt) {
+            var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+            if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57)) {
+                WarningSwal('Only Number are  Allowed. !!!!')
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function isdecimal(evt, obj) {
+            var DigitsAfterDecimal = 2;
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57) && charCode != 46) {
+                WarningSwal('Only Number are  Allowed. !!!!');
+                return false;
+            }
+            else {
+                var value = obj.value;
+                var len = value.length;
+                var index = value.indexOf('.');
+                if (index > 0 && charCode == 46) {
+                    return false;
+                }
+                if (index > 0) {
+                    var CharAfterdot = (len + 1) - index;
+                    if (CharAfterdot > 3) {
+                        WarningSwal('Two Digits Are Allowed After Decimal. !!!!')
+                        return false;
+                    }
+                }
+
+            }
+            return true;
+        }
+
+        //$(window).load(function () {
+
+        //    $(".loader").fadeOut("slow");
+
+        //});
+    </script>
+
+    @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>

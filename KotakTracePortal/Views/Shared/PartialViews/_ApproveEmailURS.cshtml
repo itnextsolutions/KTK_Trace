@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewBag.Title = "_ApproveEmailURS";
+    Layout = "~/Views/Shared/_LayoutEmail.cshtml";
+}
+
+
+<div class="composeEmail col-sm-12  ">
+    <div class="heading-compmail col-sm-12">
+        <div class="col-sm-8 p-none text-left">
+            <p class="text-left ">
+                <svg width="20px" style="margin-bottom:-5px" viewBox="0 0 512 512"><path fill="#fff" d="M156 256c0 11.046 8.954 20 20 20h60v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h60c11.046 0 20-8.954 20-20s-8.954-20-20-20h-60v-60c0-11.046-8.954-20-20-20s-20 8.954-20 20v60h-60c-11.046 0-20 8.954-20 20zM160.406 61.8l25.869-10.716c10.204-4.228 15.051-15.927 10.823-26.132-4.228-10.205-15.926-15.054-26.132-10.823l-25.869 10.716c-10.204 4.228-15.051 15.927-10.823 26.132 4.214 10.171 15.894 15.061 26.132 10.823z" /><path d="M256 0c-11.046 0-20 8.954-20 20s8.954 20 20 20c119.378 0 216 96.608 216 216 0 119.378-96.608 216-216 216-119.378 0-216-96.608-216-216 0-11.046-8.954-20-20-20s-20 8.954-20 20c0 141.483 114.497 256 256 256 141.483 0 256-114.497 256-256C512 114.517 397.503 0 256 0zM93.366 113.165l19.799-19.799c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L65.081 84.88c-7.811 7.811-7.811 20.475 0 28.285 7.809 7.809 20.474 7.811 28.285 0zM24.952 197.099c10.227 4.236 21.914-.642 26.132-10.823l10.716-25.87c4.228-10.205-.619-21.904-10.823-26.132-10.207-4.227-21.904.619-26.132 10.823l-10.716 25.869c-4.228 10.206.619 21.905 10.823 26.133z" fill="#fff" /></svg>
+                <b>Comments</b>
+
+            </p>
+        </div>
+        <div class="col-sm-4 text-right">
+            <button type="button" class="close modal-dismiss" data-dismiss="modal">×</button>
+        </div>
+    </div>
+    <div class="compose-pad col-sm-12 ">
+        <form id="demo-form" class="form-horizontal mb-lg" novalidate="novalidate">
+            <div class="form-row mb-sm">
+                <label class="col-2 col-sm-1 col-form-label" id="lblheader">Acceptance Comments</label>
+                <div class="col-10 col-sm-11">
+                    @Html.TextArea("ApprComments", new { Class = "form-control", @maxlength = "200", id = "txtComments", oncopy = "return false", onpaste = "return false", onkeyup = "this.value = this.value.toUpperCase();" })
+                    @Html.Label("Please enter the Comment!", new { Class = "text-danger", id = "lblError" })
+                </div>
+            </div>
+        </form>
+
+        <div class="form-group text-right form-button-action">
+            <button type="button" class="btn btn-primary btn-rounded" id="btApprove" value="newVendor" name="submitButton"><i class="fa fa-save"></i>  Submit</button>
+            @*<button class="btn btn-default modal-dismiss btn-rounded" id="btnclose"><i class="fa fa-times"></i> Cancel</button>*@
+        </div>
+    </div>
+</div>
+<script>
+
+    $(document).ready(function () {
+
+         $('#btApprove').click(function () {
+
+            $("#lblError").text('');
+            var ApproverComments = $("#txtComments").val();
+            var isCMTDOC = '@TempData["isCMTDOC"]';
+             var status = '@TempData["Status"]';
+
+          //  alert(isCMTDOC);
+
+            if (isCMTDOC == 'CMTDOC') {
+                if (ApproverComments != "") {
+
+                    $.ajax({
+                        async: false,
+                        cache: false,
+                        type: "POST",
+                        url: "@(Url.Action("ApproveRFQ", "Email"))",
+                        data: { "ApprComments": ApproverComments },
+                        success: function (data) {
+                            HideLoader();
+                            alert(data);
+                            if (data == "Success") {
+
+                                alert(data);
+                                swal({
+                                    title: "",
+                                    text: "Approved Successfully",
+                                    type: "success",
+                                    showCancelButton: false,
+                                    confirmButtonClass: "btn-success",
+                                    confirmButtonText: "ok",
+                                    closeOnConfirm: false
+                                },
+                               function () {
+                                   swal.close();
+
+                               });
+                            }
+                            else if (data == "Error") {
+                                swal({
+                                    title: "",
+                                    text: "Error.Kindly contact system administrator",
+                                    type: "warning",
+                                    showCancelButton: false,
+                                    confirmButtonClass: "btn-danger",
+                                    confirmButtonText: "ok",
+                                    closeOnConfirm: false
+                                },
+                               function () {
+                                   swal.close();
+
+                               });
+                            }
+                            else if (data == "ErrorAlreadyApproved") {
+                                swal({
+                                    title: "",
+                                    text: "URS already approved",
+                                    type: "warning",
+                                    showCancelButton: false,
+                                    confirmButtonClass: "btn-warning",
+                                    confirmButtonText: "ok",
+                                    closeOnConfirm: false
+                                },
+                               function () {
+                                   swal.close();
+
+                               });
+                            }
+
+                        }
+                    });
+                }
+                else {
+
+                    $("#lblError").text('Please enter the Comment!');
+                }
+                window.top.close();
+            }
+
+            if (isCMTDOC == 'URSAPPR') {
+
+                if (ApproverComments != "") {
+                    $.ajax({
+                        async: false,
+                        cache: false,
+                        type: "POST",
+                        url: "@(Url.Action("ApproveSaveURS", "Email"))",
+                        data: { "Comments": ApproverComments, "Status": status },
+                        success: function (data) {
+                            HideLoader();
+                            alert(data);
+                            if (data == "Success") {
+
+                                alert(data);
+                                swal({
+                                    title: "",
+                                    text: "Approved Successfully",
+                                    type: "success",
+                                    showCancelButton: false,
+                                    confirmButtonClass: "btn-success",
+                                    confirmButtonText: "ok",
+                                    closeOnConfirm: false
+                                },
+                               function () {
+                                   swal.close();
+
+                               });
+                            }
+                            else if (data == "Error") {
+                                swal({
+                                    title: "",
+                                    text: "Error.Kindly contact system administrator",
+                                    type: "warning",
+                                    showCancelButton: false,
+                                    confirmButtonClass: "btn-danger",
+                                    confirmButtonText: "ok",
+                                    closeOnConfirm: false
+                                },
+                               function () {
+                                   swal.close();
+
+                               });
+                            }
+                            else if (data == "ErrorAlreadyApproved") {
+                                swal({
+                                    title: "",
+                                    text: "URS already approved",
+                                    type: "warning",
+                                    showCancelButton: false,
+                                    confirmButtonClass: "btn-warning",
+                                    confirmButtonText: "ok",
+                                    closeOnConfirm: false
+                                },
+                               function () {
+                                   swal.close();
+
+                               });
+                            }
+
+                        }
+                    });
+                }
+                else {
+
+                    $("#lblError").text('Please enter the Comment!');
+                }
+
+                window.top.close();
+
+            }
+        });
+
+
+    });
+
+
+
+
+
+
+</script>
+
+

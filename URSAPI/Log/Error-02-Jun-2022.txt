@@ -1,0 +1,447 @@
+
+ 02-06-2022 16:02:39   |      |   Call API Start :  Login Details
+ 02-06-2022 16:02:52   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 16:02:52   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 16:02:52   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 16:02:52   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 16:02:52   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 16:02:52   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 16:03:49   |      |   Call API Start :  Login Details
+ 02-06-2022 16:04:27   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 16:04:27   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 16:04:27   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 16:04:27   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 16:04:27   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 16:04:27   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 16:12:59   |      |   Call API Start :  Login Details
+ 02-06-2022 16:13:07   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 16:13:07   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 16:13:07   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 16:13:07   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 16:13:07   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 16:13:07   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 16:15:36   |      |   Call API Start :  Login Details
+ 02-06-2022 16:15:44   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 16:15:44   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 16:15:44   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 16:15:44   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 16:15:44   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 16:15:44   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 16:15:56   |      |   Call API Start :  Login Details
+ 02-06-2022 17:01:42   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 17:01:43   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 17:01:43   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 17:01:43   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 17:01:43   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: Login/GetloginDetails |Exception| Attempt to load Oracle client libraries threw BadImageFormatException.  This problem will occur when running in 64 bit mode with the 32 bit Oracle client components installed.    at URSAPI.DataAccess.OracleHelper.GetConnection() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\OracleHelper.cs:line 53
+   at URSAPI.DataAccess.LoginDL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\LoginDL.cs:line 57
+   at URSAPI.Business.LoginBL.GetloginDetails(String Username, String Password, String clientIpaddress, String strHostName) in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\LoginBL.cs:line 30
+   at URSAPI.Controllers.LoginController.GetloginDetails(Object dynModel) in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\LoginController.cs:line 35
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 17:01:43   |      |   An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B)    at System.Data.Common.UnsafeNativeMethods.OCILobCopy2(IntPtr svchp, IntPtr errhp, IntPtr dst_locp, IntPtr src_locp, UInt64 amount, UInt64 dst_offset, UInt64 src_offset)
+   at System.Data.OracleClient.OCI.DetermineClientVersion()
+ 02-06-2022 17:04:27   |      |   Call API Start :  Login Details
+ 02-06-2022 17:23:22   |      |   Call API Start :  Login Details
+ 02-06-2022 17:23:37   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 17:23:37   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 17:24:04   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 17:24:04   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 17:31:19   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 17:31:19   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| Index was outside the bounds of the array.    at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList()
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 17:31:19   |      |   Index was outside the bounds of the array.    at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList()
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 17:32:12   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 17:32:12   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 17:35:21   |      |   Call API Start :  Login Details
+ 02-06-2022 17:35:30   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 17:35:31   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 17:35:33   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 17:35:33   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 18:03:17   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 18:03:17   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| Index was outside the bounds of the array.    at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 18:03:17   |      |   Index was outside the bounds of the array.    at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 18:07:31   |      |   Call API Start :  Login Details
+ 02-06-2022 18:07:36   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 18:07:37   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 18:07:38   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 18:07:38   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 18:09:06   |      |   Call API Start :  Login Details
+ 02-06-2022 18:09:08   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 18:09:08   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 18:11:47   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 18:11:47   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 18:14:32   |      |   Call API Start :  Login Details
+ 02-06-2022 18:14:34   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 18:14:34   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 18:15:13   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 18:15:13   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 18:17:27   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 18:17:27   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| Index was outside the bounds of the array.    at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 18:17:27   |      |   Index was outside the bounds of the array.    at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 18:36:27   |      |   Call API Start :  Login Details
+ 02-06-2022 18:36:30   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 18:36:30   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 18:36:50   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 18:36:50   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 18:38:35   |      |   Call API Start :  Login Details
+ 02-06-2022 18:38:36   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 18:38:36   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 18:39:01   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 18:39:01   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 18:40:14   |      |   OnException()    :   1.0 :   App_Message   :   Start
+ 02-06-2022 18:40:14   |      |   OnException()    :   1.0.1 :   App_Exception   :   Controller/Action: UserRole/GetUserDetailList |Exception| Index was outside the bounds of the array.    at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 18:40:14   |      |   Index was outside the bounds of the array.    at URSAPI.DataAccess.UserRoleDL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.DataAccess\UserRoleDL.cs:line 38
+   at URSAPI.Business.UserRoleBL.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI.Business\UserRoleBL.cs:line 32
+   at URSAPI.Controllers.UserRoleController.GetUserDetailList() in C:\Users\User\source\repos\MyURSPortal\URSAPI\Controllers\UserRoleController.cs:line 26
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ 02-06-2022 18:48:12   |      |   Call API Start :  Login Details
+ 02-06-2022 18:48:13   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 18:48:13   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 18:48:31   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 18:48:31   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 18:51:01   |      |   Call API Start :  Login Details
+ 02-06-2022 18:51:02   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 18:51:02   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 18:51:15   |      |   Call API Start :  Login Details
+ 02-06-2022 18:51:16   |      |   GetHttpResponseMessage Start GetloginDetails
+ 02-06-2022 18:51:16   |      |   GetHttpResponseMessage End GetloginDetails
+ 02-06-2022 18:51:19   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 18:51:19   |      |   GetHttpResponseMessage End GetMenuList
+ 02-06-2022 18:51:58   |      |   GetHttpResponseMessage Start GetUserDetailList
+ 02-06-2022 18:51:58   |      |   GetHttpResponseMessage End GetUserDetailList
+ 02-06-2022 18:52:00   |      |   GetHttpResponseMessage Start GetMenuList
+ 02-06-2022 18:52:00   |      |   GetHttpResponseMessage End GetMenuList

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KotakTraceModelStoreContainer" CdmEntityContainer="KotakTraceEntities">
+    <EntitySetMapping Name="tbl_Assigned_MenuMaster">
+      <EntityTypeMapping TypeName="KotakTraceModel.tbl_Assigned_MenuMaster">
+        <MappingFragment StoreEntitySet="tbl_Assigned_MenuMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Menu_Id" ColumnName="Menu_Id" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Assigned_RoleMaster">
+      <EntityTypeMapping TypeName="KotakTraceModel.tbl_Assigned_RoleMaster">
+        <MappingFragment StoreEntitySet="tbl_Assigned_RoleMaster">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="Updated_By" ColumnName="Updated_By" />
+          <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Employee">
+      <EntityTypeMapping TypeName="KotakTraceModel.tbl_Employee">
+        <MappingFragment StoreEntitySet="tbl_Employee">
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+          <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+          <ScalarProperty Name="Email_Id" ColumnName="Email_Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Login_History">
+      <EntityTypeMapping TypeName="KotakTraceModel.tbl_Login_History">
+        <MappingFragment StoreEntitySet="tbl_Login_History">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IP_Address" ColumnName="IP_Address" />
+          <ScalarProperty Name="System_Name" ColumnName="System_Name" />
+          <ScalarProperty Name="Host_Name" ColumnName="Host_Name" />
+          <ScalarProperty Name="Login_Date" ColumnName="Login_Date" />
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MenuMaster">
+      <EntityTypeMapping TypeName="KotakTraceModel.tbl_MenuMaster">
+        <MappingFragment StoreEntitySet="tbl_MenuMaster">
+          <ScalarProperty Name="Menu_Id" ColumnName="Menu_Id" />
+          <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="IsParent" ColumnName="IsParent" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="MenuOrder" ColumnName="MenuOrder" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_RoleMaster">
+      <EntityTypeMapping TypeName="KotakTraceModel.tbl_RoleMaster">
+        <MappingFragment StoreEntitySet="tbl_RoleMaster">
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="Updated_Date" ColumnName="Updated_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_MenuBind" FunctionName="KotakTraceModel.Store.SP_MenuBind">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="KotakTraceModel.SP_MenuBind_Result">
+          <ScalarProperty Name="Menu_Id" ColumnName="Menu_Id" />
+          <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+          <ScalarProperty Name="MenuOrder" ColumnName="MenuOrder" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsParent" ColumnName="IsParent" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_VerifyLogin" FunctionName="KotakTraceModel.Store.SP_VerifyLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="KotakTraceModel.SP_VerifyLogin_Result">
+          <ScalarProperty Name="Emp_Id" ColumnName="Emp_Id" />
+          <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+          <ScalarProperty Name="Email_Id" ColumnName="Email_Id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

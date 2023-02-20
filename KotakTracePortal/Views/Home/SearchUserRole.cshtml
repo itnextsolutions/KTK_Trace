@@ -1,0 +1,182 @@
+﻿@model URSPortal.Shared.UserRoleList
+@{
+    ViewBag.Title = "SearchUserRole";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-header">
+    <div class="row">
+        <div class="col-md-12">
+            @*<img src="~/octopus/assets/images/intersection.png" height="60px" width="60px" />*@
+            <h2 class="pane-text-Heading"><i class="fa fa-book" aria-hidden="true"></i><strong> USER   <small>Role</small> </strong></h2>
+        </div>
+    </div>
+
+</div>
+<div class="panel-body">
+    <button type="button" class="btn btn-success btn-rounded " onclick="location.href='@Url.Action("UserRole", "Home")'">
+        <i class="fa fa-plus"></i> New
+    </button>
+    <button type="button" class="btn btn-success btn-rounded " onclick="location.href='@Url.Action("SendPendingPOToUser", "Home")'">
+        <i class="fa fa-plus"></i> Pending PO/PR List
+    </button>
+    <div class="row">
+
+        <section class="panel">
+            <div id="SearchDetails" class="panel-collapse collapse in">
+                <div class="panel-body ">
+                    <header class="panel-heading">
+                        <h2 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#SearchDetails">
+                                User Role
+
+                            </a>
+                        </h2>
+                    </header>
+                    <div class="col-md-12">
+
+                        <div class="card">
+                            <table class="table table-bordered table-striped mb-none" id="datatable-default">
+                                <thead>
+                                    <tr>
+                                        <th>Role</th>
+                                        <th>Employee Name</th>
+                                        <th>Created By</th>
+                                        <th>Created Date</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var i in Model.getUserRolelist)
+                                    {
+                                        <tr class="border1">
+                                            <td>@i.Role</td>
+                                            <td>@i.EMPNAME</td>
+                                            <td>@i.CREATEDBY</td>
+                                            <td>@i.CREATEDDATE</td>
+                                            <td>
+                                                <a data-toggle="tooltip" data-placement="top" title="Delete Right" onclick='DeleteRight("@i.RoleId");'>
+                                                    <i class="fa fa-2x fa-trash-o text-danger" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        var Status = '@ViewBag.Message';
+        if (Status == "Success") {
+            swal({
+                title: "",
+                text: "Record Saved Successfully..",
+                type: "success",
+                showCancelButton: false,
+                confirmButtonClass: "btn-success",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+           function () {
+               swal.close();
+
+           });
+        }
+
+        var table = $('#datatable-default').DataTable({
+            destroy: true,
+            responsive: true,
+            dom: "Bflrtip",
+            "oLanguage": {
+                "sSearch": "",
+                "sLengthMenu": "\_MENU_ records",
+            },
+            "columnDefs": [
+              {
+                  "searchable": true,
+                  "orderable": true,
+                  "targets": 0
+              },
+
+            {
+                type: 'date-uk',
+                "targets": 3,
+            }
+            ],
+            buttons: [{
+                extend: 'excel',
+                text: ' <button type="button" class="btn btn-success pull-right" style="margin-right:15px;"><i class="fa fa-file-excel-o"></i> Export</button>',
+                title: 'User Role List',
+                exportOptions: {
+                    modifier: {
+                        page: 'all',
+                        order: 'index'
+                    },
+                    columns: [0, 1, 2, 3]
+                }
+            }],
+            "order": [[3, "desc"]]
+        });
+    });
+
+    function DeleteRight(RoleId) {
+        swal({
+            title: "Warning",
+            text: "Are you sure you want to delete Right?",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonClass: "btn-danger",
+            confirmButtonText: "Yes",
+            cancelButtonText: "No",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        },
+       function (isConfirm) {
+           if (isConfirm) {
+               $.ajax({
+                   type: "GET",
+                   url: "../Home/DeleteRight",
+                   data: { RoleId: RoleId },
+                   dataType: "json",
+                   cache: false,
+                   success: function (data) {                      
+                       if (data == "Delete") {
+                           swal({
+                               title: "",
+                               text: "User Rights delete Successfully.",
+                               type: "success",
+                               showCancelButton: false,
+                               confirmButtonClass: "btn-success",
+                               confirmButtonText: "ok",
+                               closeOnConfirm: false
+                           },
+                          function () {
+                               swal.close();
+                              ShowLoader();
+                              location.reload(true);
+
+                          });
+                       }
+                   }
+               })
+           }
+           else {
+               swal.close();
+           }
+       });
+
+    }
+</script>

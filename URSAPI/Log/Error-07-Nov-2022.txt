@@ -1,0 +1,8 @@
+
+ 07-11-2022 13:03:37   |      |   Call API Start :  Login Details
+ 07-11-2022 13:03:55   |      |   GetHttpResponseMessage Start GetloginDetails
+ 07-11-2022 13:03:56   |      |   GetHttpResponseMessage End GetloginDetails
+ 07-11-2022 13:04:30   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-11-2022 13:04:30   |      |   GetHttpResponseMessage End GetMenuList
+ 07-11-2022 13:08:08   |      |   GetHttpResponseMessage Start GetMenuList
+ 07-11-2022 13:08:08   |      |   GetHttpResponseMessage End GetMenuList

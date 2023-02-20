@@ -1,0 +1,328 @@
+﻿@model KotakTracePortal.Shared.Login
+@using KotakTracePortal.Buisness;
+
+@{
+    ViewBag.Title = "Advertising Tool : Login";
+    Layout = null;
+}
+
+<!doctype html>
+<html class="fixed">
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <meta name="keywords" content="" />
+    <meta name="description" content="">.
+    <meta name="author" content="">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/octopus/assets/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/octopus/assets/vendor/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/octopus/assets/vendor/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="~/octopus/assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+    <script src="~/octopus/assets/javascripts/svgembedder.min.js"></script>
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="~/octopus/assets/stylesheets/theme.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="~/octopus/assets/stylesheets/skins/default.css" />
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="~/octopus/assets/stylesheets/theme-custom.css">
+    <link rel="shortcut icon" type="image/x-icon" href="~/favicon.png" />
+
+    <!-- Head Libs -->
+    <script src="~/octopus/assets/vendor/modernizr/modernizr.js"></script>
+    <style>
+        body {
+            background: #ffff;
+        }
+    </style>
+</head>
+<body>
+    <section class="body-sign loginURS">
+        <div class="img-holder">
+            <div class="overlay1"></div>
+            <div class="bg"></div>
+            <div class="info-holder">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid">
+
+                <div class="col-md-12" style="padding-left: 0px;padding-right: 0px;">
+                    <div style="float:left; padding-right:0px; padding-top:0px;">
+                        <a href="#" class="logo text-center">
+                            <img src="~/octopus/assets/images/IT_Next_Solutions_Logo.png" height="85" alt="ITNext Solustions" />
+
+                        </a>
+                        @*<h2 style="padding-left:100% !important">Advertising Tool</h2>*@
+                    </div>
+
+                    <div style="float:right; padding-right:0px; padding-top:0px;">
+                        @*<a href="#" class="logo text-center">
+                                <img src="~/octopus/assets/images/favicon.png" height="90" alt="Creative Product" style="box-shadow: 2px 10px 13px #5d3232;" />
+                            </a>*@
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="center-sign">
+                    @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { id = "URSRegistration" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+
+                        <div class="panel11 signin_bx col-sm-6 col-lg-3 col-lg-offset-2 col-md-offset-1 col-md-5 col-sm-offset-1">
+                            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 right-login" style="margin-top: 8vh !important">
+                                <form action="index.html" method="post">
+                                    <h2 class="text-center p-none"><b>Login<span class="text-red"></span></b></h2>
+                                    <img src="~/octopus/assets/images/border-bb.png" class="img-responsive center-block" width="80px" /><br />
+                                    <p class="text-center pb-md">
+                                        Login to access the Advertising Tool.<br />
+                                    </p>
+                                    <div class="form-group mb-md">
+                                        <div class="input-group input-group-icon">
+                                            <label class="label label-control text-bold">Username</label>
+                                            <input name="UserId" type="text" class="form-control" placeholder="Enter NT Username" required autocomplete="off" />
+                                            <span class="input-group-addon">
+                                                <span class="icon icon-lg">
+                                                    <svg class="lnr lnr-user"><use xlink:href="#lnr-user"></use></svg>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mb-md">
+                                        <div class="input-group input-group-icon">
+                                            <div class="col-sm-6 text-left p-none">
+                                                <label class="label label-control text-bold">Password</label>
+                                            </div>
+
+                                            <div class="col-sm-12 plr0">
+                                                <input id="password-field" type="password" class="form-control input20" name="password" placeholder="Enter NT Password" value="" autocomplete="off">
+                                                <span toggle="#password-field" class="fa fa-fw field-icon toggle-password fa-eye"></span>
+                                                @Html.HiddenFor(m => m.RedirectURLEncoded)
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        @Html.ValidationMessage("ErrorMsg", new { @class = "text-danger errMessage", id = "spnError" })
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <button type="submit" class="btn btn-danger w50 btn-rounded signupbtn" id="btnsubmit" name="butAssignProd"> <i class="fa fa-arrow-circle-right"></i> Login</button>
+                                        </div>
+                                        <div class="col-sm-12 text-center">
+                                            <button type="button" class="btn btn-danger w50 btn-rounded" id="btnReset" name="btnResetclick"> <i class="fa fa-arrow-circle-right"></i> Reset Login</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    }
+                    <br />
+                    <div class="row">
+                        <marquee direction="left" width=100% scrolldelay="100" class="text-danger">
+                            Kindly use Advertising Tool on Google Chrome
+                        </marquee>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="col-md-12" style="margin-top:3%;">
+            <span> For any technical issues in Advertising Tool application you can contact our technical support team on <a href="#">Info.support@sbiinsurance.com</a>  </span>
+        </div>
+    </section>
+
+
+    <!-- end: page -->
+    <!-- Vendor -->
+    <script src="~/octopus/assets/vendor/jquery/jquery.js"></script>
+    <script src="~/octopus/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="~/octopus/assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="~/octopus/assets/vendor/nanoscroller/nanoscroller.js"></script>
+    <script src="~/octopus/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="~/octopus/assets/vendor/magnific-popup/magnific-popup.js"></script>
+    <script src="~/octopus/assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+    <script>
+        $(".toggle-password").click(function () {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                var psw = input.val();
+                @*$.ajax({
+                    type: "GET",
+                    url: '@Url.Action("GetDecryptPassword")',
+                    data: { Password: psw },
+                    cache: false,
+                    success: function (data) {
+                        $("#password-field").val(data);
+                    }
+                })*@
+                input.attr("type", "text");
+            } else {
+
+                input.attr("type", "password");
+                var psw = input.val();
+                @*$.ajax({
+                    type: "GET",
+                    url: '@Url.Action("GetPassword")',
+                    data: { Password: psw },
+                    cache: false,
+                    success: function (data) {
+                        $("#password-field").val(data);
+                    }
+                })*@
+            }
+        });
+    </script>
+    <!-- Theme Base, Components and Settings -->
+    <script src="~/octopus/assets/javascripts/theme.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="~/octopus/assets/javascripts/theme.custom.js"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="~/octopus/assets/javascripts/theme.init.js"></script>
+
+    <!========Modals=========---->
+    <!--Forgot password Modal -->
+
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+</body>
+
+</html>
+
+<style>
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #fffff;
+    }
+
+    /*input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }*/
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+    }
+
+    .cancelbtn, .signupbtn {
+        width: 50%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    span.fa.fa-fw.field-icon.toggle-password.fa-eye {
+        float: right;
+        top: 17px;
+        position: absolute;
+        right: 8px;
+        z-index: 999;
+    }
+
+    span.fa.fa-fw.field-icon.toggle-password {
+        position: absolute;
+        top: 17px;
+        right: 8px;
+        z-index: 99;
+    }
+</style>
+
+<script>
+
+    $(document).ready(function () {
+        $("#btnReset").hide();
+        var values = $("#spnError").text();
+
+        if (values.includes('Already LoggedIn')) {
+            $("#btnReset").show();
+        }
+
+        $("#btnsubmit").click(function () {
+
+            var Password = $("#password-field").val();
+            if (Password == "") { } else {
+                $.ajax({
+                    type: "GET",
+                    async: false,
+                    url: '@Url.Action("GetPassword")',
+                    data: { Password: Password },
+                    cache: false,
+                    success: function (data) {
+                        $("#password-field").val(data);
+                    }
+                })
+            }
+
+            $("#RedirectURLEncoded").val(location.search);
+            //console.log(location.search);
+
+
+        })
+        $("#btnReset").click(function () {
+
+            var User = $("input[name='UserId']").val()
+            if (User == "") {alert('Please enter user name') } else {
+                $.ajax({
+                    type: "GET",
+                    async: false,
+                    url: '@Url.Action("ResetLogin")',
+                    data: { User: User },
+                    cache: false,
+                    success: function (data) {
+                        $("#btnReset").hide();
+                        alert("Reset Succssfully. Kindly Login")
+                    }
+                })
+            }
+
+            $("#RedirectURLEncoded").val(location.search);
+        })
+
+    });
+
+
+
+</script>
+

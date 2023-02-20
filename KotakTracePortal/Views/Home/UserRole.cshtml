@@ -1,0 +1,116 @@
+﻿@model URSPortal.Shared.UserRole
+@{
+    ViewBag.Title = "UserRole";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content-header">
+    <div class="row">
+        <div class="col-md-12">
+            @*<img src="~/octopus/assets/images/intersection.png" height="60px" width="60px" />*@
+            <h2 class="pane-text-Heading"><i class="fa fa-book" aria-hidden="true"></i><strong> USER   <small>Role</small> </strong></h2>
+        </div>
+    </div>
+
+</div>
+<div class="panel-body">
+    <div class="row">
+        @using (Html.BeginForm("SearchUserRole", "Home", FormMethod.Post, new { id = "UserForm", enctype = "multipart/form-data" }))
+        {
+            <section class="panel">
+                <div id="SearchDetails" class="panel-collapse collapse in">
+                    <div class="panel-body ">
+                        <header class="panel-heading">
+                            <h2 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#SearchDetails">
+                                    User Role
+                                </a>
+                            </h2>
+                        </header>
+                        <div class="col-md-12">
+
+                            <div class="row">
+
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.UserId, new { Class = "control-label label-text1" })
+
+                                        @Html.DropDownListFor(m => m.UserId, new SelectList(Model.USERLIST, "ID", "Description"), "-- Select --", new { Class = "form-control input-sm mb-sm txtborder" })
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.RoleId, new { Class = "control-label label-text1" })
+
+                                        @Html.DropDownListFor(m => m.RoleId, new SelectList(Model.ROLELIST, "ID", "Description"), "-- Select --", new { Class = "form-control input-sm mb-sm txtborder" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-action-box mb-sm text-left p-none text-center">
+                                <button type="submit" class="btn btn-success btn-rounded" id="btnsave" value="Save" name="submitButton">
+                                    <i class="fa fa-save">  </i>&nbsp; Submit
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        }
+
+
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        var Status = '@ViewBag.Message';
+        if (Status == "Error") {
+            swal({
+                title: "Error",
+                text: "Error occurred Please contact the administrator",
+                type: "warning",
+                showCancelButton: false,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+           function () {
+               swal.close();
+
+           });
+        }
+        else if (Status == "UserExists")
+        {
+            swal({
+                title: "Error",
+                text: "User have already right",
+                type: "warning",
+                showCancelButton: false,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+                     function () {
+                         swal.close();
+
+                     });
+        }
+
+        else if (Status == "Success") {
+            swal({
+                title: "",
+                text: "Record Saved Successfully..",
+                type: "success",
+                showCancelButton: false,
+                confirmButtonClass: "btn-success",
+                confirmButtonText: "ok",
+                closeOnConfirm: false
+            },
+                     function () {
+                         //swal.close();
+                         window.location.href = "../Home/GetUserDashboard";
+                     });
+        }
+    });
+</script>
